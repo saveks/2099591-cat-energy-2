@@ -40,9 +40,12 @@
     <section class="hero">
       <div class="hero__wrapper">
         <h2 class="hero__title">Функциональное питание для котов</h2>
-        <img class="hero__image" src="#" width="280" height="270" alt="Упаковка корма Кэт энерджи.">
+        <picture>
+          <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="/images/promo-desktop@1x.png 1x, /images/promo-desktop@2x.png 2x">
+          <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="/images/promo-tablet@1x.png 1x, /images/promo-tablet@2x.png 2x">
+          <img class="hero__image" src="/images/promo-mobile@1x.png" srcset="/images/promo-mobile@2x.png 2x" width="280" height="270" alt="Упаковка корма Кэт энерджи.">
+        </picture>
         <p class="hero__description">Занялся собой? Займись котом!</p>
-        <!-- <button class="hero__button button" type="button">подобрать программу</button> -->
         <a class="hero__link" href="#">подобрать программу</a>
       </div>
     </section>
@@ -101,9 +104,15 @@
         </ul>
         <p class="example__text">Затраты на питание: 15 000 РУБ.</p>
         <div class="example__slider">
-          <img class="example__image example__image--fat" src="#" width="280" height="256" alt="Изображение толстого кота.">
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="/images/cat-before-tablet@1x.png 1x, /images/cat-before-tablet@2x.png 2x">
+            <img class="example__image example__image--fat" src="/images/cat-before-mobile@1x.png" srcset="/images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Изображение толстого кота.">
+          </picture>
           <button class="example__toggle" type="button">Переключить изображение</button>
-          <img class="example__image example__image--slim" src="#" width="280" height="256" alt="Изображение худого кота.">
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="/images/cat-after-tablet@1x.png 1x, /images/cat-after-tablet@2x.png 2x">
+            <img class="example__image example__image--slim" src="/images/cat-after-mobile@1x.png" srcset="/images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Изображение худого кота.">
+          </picture>
         </div>
       </div>
     </section>
