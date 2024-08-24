@@ -1,5 +1,9 @@
+.products__list {
+  list-style: none;
+}
+
 .products__link {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;

@@ -1,5 +1,5 @@
 .more__title {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
 }
@@ -7,16 +7,16 @@
 .more__text {
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: $base-color-text;
 }
 
 .more__link {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: #444444;
+  color: $base-color-text;
   background-color: #f2f2f2;
   text-decoration: none;
 }

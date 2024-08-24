@@ -1,17 +1,9 @@
-.main-navigation {
-
-}
-
-.main-navigation__toggle {
-
-}
-
 .main-navigation__list {
   list-style: none;
 }
 
 .main-navigation__item {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $secondary-font;
   font-size: 18px;
   line-height: 24px;
   text-align: left;
