@@ -1,0 +1,22 @@
+.more__title {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.more__text {
+  font-size: 12px;
+  line-height: 16px;
+  color: $base-color-text;
+}
+
+.more__link {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $base-color-text;
+  background-color: #f2f2f2;
+  text-decoration: none;
+}

@@ -1,0 +1,33 @@
+.additional {
+  font-family: $secondary-font;
+}
+
+.additional__title {
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.additional__product {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.additional__weight {
+  line-height: 14px;
+}
+
+.additional__price {
+  line-height: 14px;
+}
+
+.additional__link {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #68b738;
+  text-decoration: none;
+}

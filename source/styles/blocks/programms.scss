@@ -1,0 +1,23 @@
+.programms {
+  font-family: $secondary-font;
+}
+
+.programms__title {
+  font-size: 24px;
+  line-height: 37px;
+  text-align: left;
+  color: #000000;
+}
+
+.programms__description {
+  text-align: left;
+}
+
+.programms__link {
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}

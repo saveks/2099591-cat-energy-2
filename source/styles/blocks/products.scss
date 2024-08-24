@@ -1,0 +1,13 @@
+.products__list {
+  list-style: none;
+}
+
+.products__link {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #68b738;
+  text-decoration: none;
+}
