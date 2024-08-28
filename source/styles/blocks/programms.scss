@@ -21,3 +21,17 @@
   color: #000000;
   text-decoration: none;
 }
+
+.programms__item--slim {
+  background-image: url("../../icons/stack.svg#cat-black-sit");
+  background-repeat: no-repeat;
+  background-size: 50px 53px;
+  background-position: left;
+}
+
+.programms__item--pro {
+  background-image: url("../../icons/stack.svg#cat-black-go");
+  background-repeat: no-repeat;
+  background-size: 67px 50px;
+  background-position: left;
+}
