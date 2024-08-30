@@ -1,25 +1,47 @@
-.example {
+.example__title {
   font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 40px;
   color: #000000;
 }
 
-.example__title {
-  font-size: 36px;
-  line-height: 40px;
-}
-
 .example__value {
+  font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
+  color: #000000;
 }
 
 .example__caption {
   font-size: 12px;
   line-height: 12px;
-  text-align: center;
 }
 
 .example__text {
+  font-family: $secondary-font;
   line-height: 20px;
-  text-align: center;
+}
+
+.example__toggle {
+  background-color: #666666;
+  border: none;
+  border-radius: 2px;
+  width: 4px;
+  height: 512px;
+  padding: 0;
+  position: absolute;
+}
+
+.example__toggle::before {
+  content: "";
+  background-color: #ffffff;
+  border: 2px solid #666666;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  display: block;
 }

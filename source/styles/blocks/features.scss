@@ -1,8 +1,5 @@
-.features {
-  font-family: $secondary-font;
-}
-
 .features__title {
+  font-family: $secondary-font;
   font-size: 36px;
   line-height: 40px;
   color: #000000;
@@ -10,4 +7,40 @@
 
 .features__list {
   list-style: none;
+}
+
+.features__item {
+  min-height: 60px;
+}
+
+.features__item--nutrients {
+  background-image: url("../../icons/stack.svg#leaf");
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+  background-position: left;
+}
+
+.features__item--powder {
+  background-image: url("../../icons/stack.svg#powder");
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+  background-position: left;
+}
+
+.features__item--exchange {
+  background-image: url("../../icons/stack.svg#eat");
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+  background-position: left;
+}
+
+.features__item--improvement {
+  background-image: url("../../icons/stack.svg#clock");
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+  background-position: left;
+}
+
+.features__description {
+  margin-left: 80px;
 }
