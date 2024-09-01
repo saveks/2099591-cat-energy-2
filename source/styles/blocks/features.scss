@@ -10,35 +10,63 @@
 }
 
 .features__item {
-  min-height: 60px;
+  position: relative;
 }
 
-.features__item--nutrients {
+.features__item::before {
+  content: "";
+  background-color: $base-green;
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+
+.features__item--nutrients::after {
+  content: "";
   background-image: url("../../icons/stack.svg#leaf");
   background-repeat: no-repeat;
-  background-size: 60px 60px;
-  background-position: left;
+  background-size: 25px 28px;
+  width: 25px;
+  height: 28px;
+  position: absolute;
+  top: 16px;
+  left: 18px;
 }
 
-.features__item--powder {
+.features__item--powder::after {
+  content: "";
   background-image: url("../../icons/stack.svg#powder");
   background-repeat: no-repeat;
-  background-size: 60px 60px;
-  background-position: left;
+  background-size: 26px 28px;
+  width: 25px;
+  height: 28px;
+  position: absolute;
+  top: 16px;
+  left: 18px;
 }
 
-.features__item--exchange {
+.features__item--exchange::after {
+  content: "";
   background-image: url("../../icons/stack.svg#eat");
   background-repeat: no-repeat;
-  background-size: 60px 60px;
-  background-position: left;
+  background-size: 25px 30px;
+  width: 25px;
+  height: 30px;
+  position: absolute;
+  top: 16px;
+  left: 18px;
 }
 
-.features__item--improvement {
+.features__item--improvement::after {
+  content: "";
   background-image: url("../../icons/stack.svg#clock");
   background-repeat: no-repeat;
-  background-size: 60px 60px;
-  background-position: left;
+  background-size: 26px 31px;
+  width: 26px;
+  height: 31px;
+  position: absolute;
+  top: 16px;
+  left: 18px;
 }
 
 .features__description {

@@ -1,0 +1,26 @@
+.copyright {
+  font-size: 16px;
+  line-height: 20px;
+  color: $base-color-text;
+  text-decoration: none;
+}
+
+.copyright::after {
+  content: "";
+  display: block;
+  width: 27px;
+  height: 34px;
+  background-color: #666666;
+  mask-image: url("../../icons/stack.svg#html-academy-pic");
+  mask-repeat: no-repeat;
+  mask-size: 27px 34px;
+
+  &:hover,
+  &:focus {
+    background-color: #68b738;
+  }
+
+  &:active {
+    background-color: rgba(104, 183, 56, 1);
+  }
+}

@@ -30,6 +30,15 @@
   height: 512px;
   padding: 0;
   position: absolute;
+
+  &:hover,
+  &:focus {
+    background-color: #68b738;
+  }
+
+  &:active {
+    background-color: rgba(104, 183, 56, 1);
+  }
 }
 
 .example__toggle::before {
@@ -44,4 +53,20 @@
   left: 50%;
   transform: translate(-50%);
   display: block;
+}
+
+.example__toggle::after {
+  content: "";
+  background-color: #666666;
+  width: 24px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  // transform: translate(-50% -50%);
+  display: block;
+  mask-image: url("../../icons/stack.svg#slider-arrow");
+  mask-repeat: no-repeat;
+  mask-size: 24px 18px;
+  mask-position: 50%;
 }

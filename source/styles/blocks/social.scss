@@ -1,7 +1,7 @@
 .social__link {
-  min-width: 28px;
-  min-height: 28px;
-  background-color: #666666;
+  display: block;
+  width: 28px;
+  height: 28px;
 }
 
 .social__link--vkontakte {
@@ -9,16 +9,45 @@
   mask-repeat: no-repeat;
   mask-size: 28px 22px;
   background-color: #666666;
+
+  &:hover,
+  &:focus {
+    background-color: #68b738;
+  }
+
+  &:active {
+    background-color: rgba(104, 183, 56, 1);
+  }
 }
 
 .social__link--youtube {
   mask-image: url("../../icons/stack.svg#youtube");
   mask-repeat: no-repeat;
+  mask-size: 28px 22px;
   background-color: #666666;
+
+  &:hover,
+  &:focus {
+    background-color: #68b738;
+  }
+
+  &:active {
+    background-color: rgba(104, 183, 56, 1);
+  }
 }
 
 .social__link--telegram {
   mask-image: url("../../icons/stack.svg#telegram");
   mask-repeat: no-repeat;
+  mask-size: 28px 22px;
   background-color: #666666;
+
+  &:hover,
+  &:focus {
+    background-color: #68b738;
+  }
+
+  &:active {
+    background-color: rgba(104, 183, 56, 1);
+  }
 }
