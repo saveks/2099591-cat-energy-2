@@ -62,6 +62,10 @@
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .programms__link::after {
@@ -74,4 +78,8 @@
   mask-repeat: no-repeat;
   mask-size: 24px 12px;
   mask-position: 100%;
+}
+
+.programms__link:active::after {
+  opacity: 0.3;
 }

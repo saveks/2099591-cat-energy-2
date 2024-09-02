@@ -1,15 +1,16 @@
 .main-navigation__toggle {
-  background-image: url("../../icons/stack.svg/#open-menu.svg");
+  background-image: url("../../icons/stack.svg#open-menu");
   background-repeat: no-repeat;
   background-size: 24px 24px;
+  background-position: center;
   background-color: #ffffff;
-  // border: none;
+  border: none;
   width: 24px;
   height: 24px;
 }
 
 .main-navigation__toggle--close {
-  background-image: url("../../icons/stack.svg/#close-menu.svg");
+  background-image: url("../../icons/stack.svg#close-menu");
 }
 
 .main-navigation__list {

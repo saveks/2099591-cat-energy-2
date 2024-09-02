@@ -29,7 +29,7 @@
       </picture>
     </a>
     <nav class="main-navigation">
-      <button class="main-navigation__toggle" type="button">
+      <button class="main-navigation__toggle main-navigation__toggle--close" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-navigation__wrapper">
@@ -281,6 +281,11 @@
         </ul>
       </div>
       <div class="promo">
+        <picture>
+          <source width="245" height="288" type="image/png" media="(min-width: 1440px)" srcset="images/cat-backpack-desktop@1x.png 1x, images/cat-backpack-desktop@2x.png 2x">
+          <source width="707" height="200" type="image/png" media="(min-width: 768px)" srcset="images/cat-backpack-tablet@1x.png 1x, images/cat-backpack-tablet@2x.png 2x">
+          <img class="promo__image" src="images/cat-backpack-mobile@1x.png" srcset="/images/cat-backpack-mobile@2x.png 2x" width="280" height="290" alt="Фото кота в рюкзаке.">
+        </picture>
         <p class="promo__text">Закажите все и получите чехол для кота в подарок!</p>
       </div>
     </section>
@@ -333,9 +338,7 @@
           </a>
         </li>
       </ul>
-      <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
-        <img src="images/html-academy.svg" width="113" height="20" alt="Текстовый логотип HTML Academy.">
-        <img src="images/html-academy-pic.svg" width="27" height="34" alt="Логотип HTML Academy.">
+      <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
       </a>
     </div>
   </footer>

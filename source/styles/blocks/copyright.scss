@@ -5,6 +5,10 @@
   text-decoration: none;
 }
 
+.copyright:active {
+  opacity: 0.3;
+}
+
 .copyright::after {
   content: "";
   display: block;
@@ -14,13 +18,13 @@
   mask-image: url("../../icons/stack.svg#html-academy-pic");
   mask-repeat: no-repeat;
   mask-size: 27px 34px;
+}
 
-  &:hover,
-  &:focus {
-    background-color: #68b738;
-  }
+.copyright:hover::after,
+.copyright:focus::after {
+  background-color: #68b738;
+}
 
-  &:active {
-    background-color: rgba(104, 183, 56, 1);
-  }
+.copyright:active::after {
+  background-color: rgba(104, 183, 56, 0.3);
 }
