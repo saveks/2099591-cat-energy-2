@@ -2,14 +2,14 @@
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 40px;
-  color: #000000;
+  color: $black;
 }
 
 .example__value {
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
-  color: #000000;
+  color: $black;
 }
 
 .example__caption {
@@ -33,18 +33,18 @@
 
   &:hover,
   &:focus {
-    background-color: #68b738;
+    background-color: $base-green;
   }
 
   &:active {
-    background-color: #68b738;
+    background-color: $base-green;
     opacity: 0.6;
   }
 }
 
 .example__toggle::before {
   content: "";
-  background-color: #ffffff;
+  background-color: $white;
   border: 2px solid #666666;
   border-radius: 50%;
   width: 40px;
@@ -58,7 +58,7 @@
 
 .example__toggle:hover::before,
 .example__toggle:focus::before {
-  border: 2px solid #68b738;
+  border: 2px solid $base-green;
 }
 
 .example__toggle:active::before {
@@ -83,10 +83,10 @@
 
 .example__toggle:hover::after,
 .example__toggle:focus::after {
-  background-color: #68b738;
+  background-color: $base-green;
 }
 
 .example__toggle:active::after {
-  background-color: #68b738;
+  background-color: $base-green;
   opacity: 0.6;
 }

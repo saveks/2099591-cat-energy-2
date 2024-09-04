@@ -1,9 +1,39 @@
 .hero {
   font-family: $secondary-font;
   font-weight: 400;
-  color: #ffffff;
-  // background-color: rgba(104, 183, 56, 0.85);
-  background: linear-gradient(180deg, rgba(104, 183, 56, 0.85) 63%, rgba(255, 255, 255, 1) 63%);
+  color: $white;
+  background-image:
+    linear-gradient(rgba(104, 183, 56, 0.85) 63%, $white 63%),
+    url("../../images/cat-licking@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% auto, 320px auto;
+
+  @media (min-resolution: 2dppx) {
+    background-image:
+      linear-gradient(rgba(104, 183, 56, 0.85) 63%, $white 63%),
+      url("../../images/cat-licking@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+    background: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $black;
+    background-image:
+      linear-gradient(90deg, $white 50%, rgba(104, 183, 56, 0.85) 50%),
+      url("../../images/cat-licking@1x.jpg");
+    background-position: top right;
+    background-size: 100% auto, 50% auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        linear-gradient(90deg, $white 50%, rgba(104, 183, 56, 0.85) 50%),
+        url("../../images/cat-licking@2x.jpg");
+    }
+  }
 }
 
 .hero__title {
@@ -20,12 +50,13 @@
 .hero__image-background {
   position: relative;
   z-index: -1;
+  object-fit: cover;
 }
 
 .hero__link {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  background-color: #68b738;
+  background-color: $base-green;
   text-decoration: none;
 }
