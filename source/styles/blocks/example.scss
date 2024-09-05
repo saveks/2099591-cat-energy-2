@@ -1,25 +1,96 @@
-.example {
-  font-family: $secondary-font;
-  color: #000000;
-}
 
 .example__title {
+  font-family: $secondary-font;
   font-size: 36px;
   line-height: 40px;
+  color: $black;
 }
 
 .example__value {
+  font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
+  color: $black;
+
 }
 
 .example__caption {
   font-size: 12px;
   line-height: 12px;
-  text-align: center;
+
 }
 
 .example__text {
+  font-family: $secondary-font;
   line-height: 20px;
-  text-align: center;
+}
+
+.example__toggle {
+  background-color: #666666;
+  border: none;
+  border-radius: 2px;
+  width: 4px;
+  height: 512px;
+  padding: 0;
+  position: absolute;
+
+  &:hover,
+  &:focus {
+    background-color: $base-green;
+  }
+
+  &:active {
+    background-color: $base-green;
+    opacity: 0.6;
+  }
+}
+
+.example__toggle::before {
+  content: "";
+  background-color: $white;
+  border: 2px solid #666666;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  display: block;
+}
+
+.example__toggle:hover::before,
+.example__toggle:focus::before {
+  border: 2px solid $base-green;
+}
+
+.example__toggle:active::before {
+  border: 2px solid rgba(104, 183, 56, 0.6);
+}
+
+.example__toggle::after {
+  content: "";
+  background-color: #666666;
+  width: 24px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  // transform: translate(-50% -50%);
+  display: block;
+  mask-image: url("../../icons/stack.svg#slider-arrow");
+  mask-repeat: no-repeat;
+  mask-size: 24px 18px;
+  mask-position: 50%;
+}
+
+.example__toggle:hover::after,
+.example__toggle:focus::after {
+  background-color: $base-green;
+}
+
+.example__toggle:active::after {
+  background-color: $base-green;
+  opacity: 0.6;
+
 }

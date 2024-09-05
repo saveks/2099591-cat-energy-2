@@ -17,11 +17,19 @@
 
   <header class="main-header">
     <a class="main-header__logo logo-link" href="#">
-      <img class="logo-link__image" src="#" width="33" height="38" alt="Логотип Cat Energy.">
-      <img class="logo-link__image-text" src="#" width="101" height="18" alt="Текстовый логотип Cat Energy.">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+        <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+        <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+      </picture>
+      <picture>
+        <source media="(min-width: 1440px)" srcset="images/logo-text.svg" width="118" height="21" type="image/svg+xml">
+        <source media="(min-width: 768px)" srcset="images/logo-text.svg" width="101" height="18" type="image/svg+xml">
+        <img src="images/logo-text.svg" width="101" height="18" alt="Текстовый логотип Cat Energy.">
+      </picture>
     </a>
     <nav class="main-navigation">
-      <button class="main-navigation__toggle" type="button">
+      <button class="main-navigation__toggle main-navigation__toggle--close" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-navigation__list">
@@ -112,7 +120,9 @@
             <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="/images/cat-before-tablet@1x.png 1x, /images/cat-before-tablet@2x.png 2x">
             <img class="example__image example__image--fat" src="images/cat-before-mobile@1x.png" srcset="/images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Изображение толстого кота.">
           </picture>
-          <button class="example__toggle" type="button">Переключить изображение</button>
+          <button class="example__toggle" type="button">
+            <span class="visually-hidden">Переключить изображение</span>
+          </button>
           <picture>
             <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="/images/cat-after-tablet@1x.png 1x, /images/cat-after-tablet@2x.png 2x">
             <img class="example__image example__image--slim" src="images/cat-after-mobile@1x.png" srcset="/images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Изображение худого кота.">
@@ -137,22 +147,27 @@
 
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <a class="main-footer__logo logo-link" href="#">
-        <img class="logo-link__image-text" src="#" width="128" height="124" alt="Текстовый логотип Кэт энерджи.">
+      <a class="main-footer__logo" href="#">
+        <span class="visually-hidden">Текстовый логотип Кэт энерджи.</span>
       </a>
       <ul class="main-footer__list social">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Vkontakte</a>
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Мы в Vkontakte</span>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Youtube</a>
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Мы в Youtube</span>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Telegram</a>
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Мы в Telegram</span>
+          </a>
         </li>
       </ul>
       <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
-        <img class="copyright__logo" src="#" width="27" height="34" alt="Логотип HTML Academy.">
       </a>
     </div>
   </footer>

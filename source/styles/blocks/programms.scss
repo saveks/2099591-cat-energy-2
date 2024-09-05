@@ -1,12 +1,52 @@
-.programms {
-  font-family: $secondary-font;
+
+.programms__list {
+  list-style: none;
+}
+
+.programms__item {
+  position: relative;
+}
+
+.programms__item::before {
+  content: "";
+  background-color: $base-green;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: block;
+}
+
+.programms__item--slim::after {
+  content: "";
+  background-image: url("../../icons/stack.svg#cat-slim");
+  background-repeat: no-repeat;
+  background-size: 36px 50px;
+  width: 36px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 7px;
+}
+
+.programms__item--pro::after {
+  content: "";
+  background-image: url("../../icons/stack.svg#cat-pro");
+  background-repeat: no-repeat;
+  background-size: 67px 28px;
+  width: 67px;
+  height: 28px;
+  position: absolute;
+  top: 11px;
+  left: -9px;
 }
 
 .programms__title {
+  font-family: $secondary-font;
   font-size: 24px;
   line-height: 37px;
   text-align: left;
-  color: #000000;
+  color: $black;
+
 }
 
 .programms__description {
@@ -14,10 +54,38 @@
 }
 
 .programms__link {
+
+  display: block;
+  width: 139px;
+  height: 24px;
+  font-family: $primary-font;
+
   font-size: 16px;
   line-height: 16px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+
+  color: $black;
   text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.programms__link::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 12px;
+  background-color: $black;
+  mask-image: url("../../icons/stack.svg#arrow");
+  mask-repeat: no-repeat;
+  mask-size: 24px 12px;
+  mask-position: 100%;
+}
+
+.programms__link:active::after {
+  opacity: 0.3;
+
 }

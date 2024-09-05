@@ -1,13 +1,78 @@
-.features {
-  font-family: $secondary-font;
-}
 
 .features__title {
+  font-family: $secondary-font;
   font-size: 36px;
   line-height: 40px;
-  color: #000000;
+  color: $black;
+
 }
 
 .features__list {
   list-style: none;
 }
+
+
+.features__item {
+  position: relative;
+}
+
+.features__item::before {
+  content: "";
+  background-color: $base-green;
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+
+.features__item--nutrients::after {
+  content: "";
+  background-image: url("../../icons/stack.svg#leaf");
+  background-repeat: no-repeat;
+  background-size: 25px 28px;
+  width: 25px;
+  height: 28px;
+  position: absolute;
+  top: 16px;
+  left: 18px;
+}
+
+.features__item--powder::after {
+  content: "";
+  background-image: url("../../icons/stack.svg#powder");
+  background-repeat: no-repeat;
+  background-size: 26px 28px;
+  width: 25px;
+  height: 28px;
+  position: absolute;
+  top: 16px;
+  left: 18px;
+}
+
+.features__item--exchange::after {
+  content: "";
+  background-image: url("../../icons/stack.svg#eat");
+  background-repeat: no-repeat;
+  background-size: 25px 30px;
+  width: 25px;
+  height: 30px;
+  position: absolute;
+  top: 16px;
+  left: 18px;
+}
+
+.features__item--improvement::after {
+  content: "";
+  background-image: url("../../icons/stack.svg#clock");
+  background-repeat: no-repeat;
+  background-size: 26px 31px;
+  width: 26px;
+  height: 31px;
+  position: absolute;
+  top: 16px;
+  left: 18px;
+}
+
+.features__description {
+  margin-left: 80px;
+}
+
