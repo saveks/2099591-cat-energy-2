@@ -1,4 +1,5 @@
 .promo {
+
   min-height: 290px;
   background:
     linear-gradient(rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85) 100%),
@@ -56,12 +57,14 @@
 .promo__image {
   position: relative;
   z-index: -1;
+
 }
 
 .promo__text {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+
   color: $white;
 }
 
@@ -73,4 +76,5 @@
   width: 78px;
   height: 80px;
   display: block;
+
 }

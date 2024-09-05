@@ -1,5 +1,6 @@
 .hero {
   font-family: $secondary-font;
+
   font-weight: 400;
   color: $white;
   background-image:
@@ -35,11 +36,13 @@
         url("../../images/cat-licking@2x.jpg");
     }
   }
+
 }
 
 .hero__title {
   font-size: 36px;
   line-height: 36px;
+
 }
 
 .hero__description {
@@ -47,6 +50,7 @@
   text-align: left;
   text-transform: uppercase;
 }
+
 
 .hero__image-background {
   position: relative;
@@ -59,5 +63,5 @@
   line-height: 20px;
   text-transform: uppercase;
   background-color: $base-green;
-  text-decoration: none;
+;
 }

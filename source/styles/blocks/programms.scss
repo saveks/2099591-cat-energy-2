@@ -1,3 +1,4 @@
+
 .programms__list {
   list-style: none;
 }
@@ -45,6 +46,7 @@
   line-height: 37px;
   text-align: left;
   color: $black;
+
 }
 
 .programms__description {
@@ -52,14 +54,17 @@
 }
 
 .programms__link {
+
   display: block;
   width: 139px;
   height: 24px;
   font-family: $primary-font;
+
   font-size: 16px;
   line-height: 16px;
   text-align: center;
   text-transform: uppercase;
+
   color: $black;
   text-decoration: none;
 
@@ -82,4 +87,5 @@
 
 .programms__link:active::after {
   opacity: 0.3;
+
 }

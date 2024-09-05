@@ -1,3 +1,4 @@
+
 .example__title {
   font-family: $secondary-font;
   font-size: 36px;
@@ -10,11 +11,13 @@
   font-size: 24px;
   line-height: 24px;
   color: $black;
+
 }
 
 .example__caption {
   font-size: 12px;
   line-height: 12px;
+
 }
 
 .example__text {
@@ -89,4 +92,5 @@
 .example__toggle:active::after {
   background-color: $base-green;
   opacity: 0.6;
+
 }
