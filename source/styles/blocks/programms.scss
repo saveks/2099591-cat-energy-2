@@ -1,10 +1,49 @@
+.programms__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 0 110px;
+  }
+}
 
 .programms__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 80px;
+  }
 }
 
 .programms__item {
+  width: 280px;
+  min-height: 266px;
   position: relative;
+  background-color: $grey;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    min-height: 372px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    min-height: 374px;
+  }
 }
 
 .programms__item::before {
@@ -46,7 +85,6 @@
   line-height: 37px;
   text-align: left;
   color: $black;
-
 }
 
 .programms__description {
@@ -87,5 +125,4 @@
 
 .programms__link:active::after {
   opacity: 0.3;
-
 }

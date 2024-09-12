@@ -1,4 +1,14 @@
 
+.main-navigation {
+  @media (min-width: $tablet-width) {
+    width: 436px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 475px;
+  }
+}
+
 .main-navigation__toggle {
   background-image: url("../../icons/stack.svg#open-menu");
   background-repeat: no-repeat;
@@ -8,6 +18,10 @@
   border: none;
   width: 24px;
   height: 24px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-navigation__toggle--close {
@@ -16,7 +30,21 @@
 
 
 .main-navigation__list {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0;
+  padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    width: 436px;
+    flex-direction: row;
+    gap: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 475px;
+  }
 }
 
 .main-navigation__item {
