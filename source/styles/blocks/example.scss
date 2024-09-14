@@ -6,18 +6,24 @@
   color: $black;
 }
 
+.example__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .example__value {
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
   color: $black;
-
 }
 
 .example__caption {
   font-size: 12px;
   line-height: 12px;
-
 }
 
 .example__text {
@@ -92,5 +98,4 @@
 .example__toggle:active::after {
   background-color: $base-green;
   opacity: 0.6;
-
 }

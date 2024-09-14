@@ -1,9 +1,19 @@
+.map {
+  background-color: $grey;
+}
+
+.map__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .map__text {
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
   text-align: left;
   color: #111111;
+  text-transform: uppercase;
 }
 
 .map__address {
