@@ -1,9 +1,22 @@
+.example {
+  background-color: $grey;
+}
+
+.example__wrapper {
+  padding: 25px 20px 0;
+}
 
 .example__title {
+  margin: 0;
+  margin-bottom: 40px;
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 40px;
   color: $black;
+}
+
+.example__content {
+  margin: 0;
 }
 
 .example__list {

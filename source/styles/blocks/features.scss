@@ -3,6 +3,8 @@
 }
 
 .features__title {
+  margin: 0;
+  margin-bottom: 40px;
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 40px;
@@ -12,6 +14,7 @@
 .features__list {
   display: flex;
   flex-flow: column wrap;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -19,6 +22,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    gap: 0;
   }
 }
 
@@ -45,6 +49,10 @@
     min-height: 280px;
     margin-right: 153px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 94px;
+  }
 }
 
 .features__item--nutrients::after {
@@ -63,6 +71,11 @@
   @media (min-width: $tablet-width) {
     width: 246px;
     min-height: 280px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
   }
 }
 

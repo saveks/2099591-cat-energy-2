@@ -1,6 +1,6 @@
 .hero {
+  margin-bottom: 20px;
   font-family: $secondary-font;
-
   font-weight: 400;
   color: $white;
   background-image:
@@ -39,21 +39,22 @@
 }
 
 .hero__title {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  padding-top: 25px;
   font-size: 36px;
   line-height: 36px;
+  text-align: center;
 }
 
 .hero__description {
+  margin: 0;
+  margin-bottom: 29px;
+  padding: 0;
   line-height: 14px;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
-}
-
-
-.hero__image-background {
-  position: relative;
-  z-index: -1;
-  object-fit: cover;
 }
 
 .hero__link {
