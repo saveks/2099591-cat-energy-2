@@ -1,5 +1,13 @@
 .features__wrapper {
   margin: 0 20px 49px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px;
+  }
 }
 
 .features__title {
@@ -22,12 +30,13 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    gap: 0;
+    gap: 37px;
   }
 }
 
 .features__item {
   position: relative;
+  min-height: 60px;
 }
 
 .features__item::before {

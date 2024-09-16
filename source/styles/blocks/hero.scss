@@ -8,7 +8,7 @@
     url("../../images/cat-licking@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 100% auto;
+  background-size: cover;
 
   @media (min-resolution: 2dppx) {
     background-image:
@@ -28,13 +28,28 @@
       url("../../images/cat-licking@1x.jpg");
     background-repeat: no-repeat;
     background-position: top right;
-    background-size: 100% auto, 50% auto;
+    background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image:
         linear-gradient(90deg, $white 50%, rgba(104, 183, 56, 0.85) 50%),
         url("../../images/cat-licking@2x.jpg");
     }
+  }
+}
+
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    align-items: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 3;
   }
 }
 
@@ -46,6 +61,17 @@
   font-size: 36px;
   line-height: 36px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 440px;
+    margin-bottom: 40px;
+    padding-left: 90px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+  }
 }
 
 .hero__description {
@@ -55,11 +81,36 @@
   line-height: 14px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+  }
+}
+
+.hero__image {
+  //display: contents;
 }
 
 .hero__link {
+  padding: 10px 63.5px;
   font-size: 16px;
   line-height: 20px;
+  color: $white;
   text-transform: uppercase;
+  text-decoration: none;
   background-color: $base-green;
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 26px;
+    margin: 0;
+    order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 3;
+  }
 }

@@ -1,10 +1,18 @@
 .main-inner__title {
+  margin: 0 0 41px 20px;
+  padding: 0;
   font-family: $secondary-font;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
   text-align: left;
-
   color: $black;
 
+  @media (min-width: $tablet-width) {
+    margin: 0 84px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 84px 110px;
+  }
 }
