@@ -1,12 +1,11 @@
 .main-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 27px;
+  place-items: center center;
   padding: 13px 21px 14px 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
+    margin: 0;
     padding: 25px 34px 0 30px;
   }
 
