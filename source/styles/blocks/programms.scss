@@ -61,12 +61,20 @@
   @media (min-width: $tablet-width) {
     width: 200px;
     height: 200px;
+    top: 100px;
+    right: 20px;
   }
 
   @media (min-width: $desktop-width) {
     width: 100px;
     height: 100px;
+    top: 20px;
+    left: 20px;
   }
+}
+
+.rogramms__item--slim {
+  position: relative;
 }
 
 .programms__item--slim::after {
@@ -125,13 +133,16 @@
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 37px;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
   color: $black;
 
   @media (min-width: $tablet-width) {
     max-width: 340px;
     margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
@@ -145,7 +156,8 @@
   text-align: left;
 
   @media (min-width: $tablet-width) {
-    max-width: 340px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {

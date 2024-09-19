@@ -1,6 +1,7 @@
 .products__list {
   display: flex;
   flex-flow: column wrap;
+  align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -16,6 +17,9 @@
 }
 
 .products__item {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
   padding: 20px 20px 25px;
 
   @media (min-width: $tablet-width) {

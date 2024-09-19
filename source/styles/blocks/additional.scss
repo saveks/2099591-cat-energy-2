@@ -3,7 +3,7 @@
 }
 
 .additional__wrapper {
-  margin: 0 20px;
+  margin: 0 20px 54px;
 }
 
 .additional__title {
@@ -19,6 +19,13 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.additional__item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .additional__product {
@@ -40,9 +47,85 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-
   color: $white;
   background-color: $base-green;
-
   text-decoration: none;
+}
+
+.additional__promo {
+  min-height: 290px;
+  background:
+    linear-gradient(rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85) 100%),
+    url("../../images/cat-backpack-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background:
+      linear-gradient(rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85) 100%),
+      url("../../images/cat-backpack-mobile@2x.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+  }
+
+  @media (min-width: $tablet-width) {
+    background:
+      linear-gradient(rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85) 100%),
+      url("../../images/cat-backpack-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 707px 200px;
+
+    @media (min-resolution: 2dppx) {
+      background:
+        linear-gradient(rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85) 100%),
+        url("../../images/cat-backpack-tablet@2x.png");
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: 707px 200px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background:
+      linear-gradient(rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85) 100%),
+      url("../../images/cat-backpack-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 245px 288px;
+
+    @media (min-resolution: 2dppx) {
+      background:
+        linear-gradient(rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85) 100%),
+        url("../../images/cat-backpack-desktop@2x.png");
+      background-repeat: no-repeat;
+      background-position: top right;
+      background-size: 245px 288px;
+    }
+  }
+}
+
+.additional__promo--text {
+  margin: 0;
+  padding: 187px 61px 43px 58px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $white;
+
+  @media (min-width: $tablet-width) {
+    padding: 71px 125px 69px 421px;
+  }
+}
+
+.additional__promo--text::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#gift");
+  background-repeat: no-repeat;
+  background-size: 78px 80px;
+  width: 78px;
+  height: 80px;
+  display: block;
 }

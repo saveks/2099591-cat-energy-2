@@ -2,6 +2,7 @@
 .main-navigation {
   @media (min-width: $tablet-width) {
     width: 436px;
+    margin-left: auto;
   }
 
   @media (min-width: $desktop-width) {
