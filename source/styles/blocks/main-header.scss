@@ -10,9 +10,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 74px;
-    padding: 55px 110px 0;
-    order: 1;
+    position: absolute;
+    top: 0;
+    left: 0
+    //min-width: 1220px;
+    height: 59px;
+    z-index: 1;
   }
 }
 

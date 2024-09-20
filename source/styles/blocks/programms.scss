@@ -57,24 +57,23 @@
   height: 50px;
   border-radius: 50%;
   display: block;
+  top: 24px;
+  left: 20px;
 
   @media (min-width: $tablet-width) {
     width: 200px;
     height: 200px;
     top: 100px;
-    right: 20px;
+    left: auto;
+    right: 63px;
   }
 
   @media (min-width: $desktop-width) {
     width: 100px;
     height: 100px;
-    top: 20px;
-    left: 20px;
+    top: 41px;
+    left: 53px;
   }
-}
-
-.rogramms__item--slim {
-  position: relative;
 }
 
 .programms__item--slim::after {
@@ -85,19 +84,25 @@
   width: 36px;
   height: 50px;
   position: absolute;
-  top: 0;
-  left: 7px;
+  top: 21px;
+  left: 27px;
 
   @media (min-width: $tablet-width) {
     background-size: 140px 194px;
     width: 140px;
     height: 194px;
+    top: 100px;
+    left: auto;
+    right: 85px;
   }
 
   @media (min-width: $desktop-width) {
     background-size: 70px 97px;
     width: 70px;
     height: 97px;
+    top: 41px;
+    left: 67px;
+    right: auto;
   }
 }
 
@@ -109,19 +114,25 @@
   width: 67px;
   height: 28px;
   position: absolute;
-  top: 11px;
-  left: -9px;
+  top: 35px;
+  left: 11px;
 
   @media (min-width: $tablet-width) {
     background-size: 268px 112px;
     width: 268px;
     height: 112px;
+    top: 135px;
+    left: auto;
+    right: 35px;
   }
 
   @media (min-width: $desktop-width) {
     background-size: 134px 56px;
     width: 134px;
     height: 56px;
+    top: 67px;
+    left: 33px;
+    right: auto;
   }
 }
 
