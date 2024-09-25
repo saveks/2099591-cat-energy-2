@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .features__wrapper {
   margin: 0 20px 49px;
 
@@ -14,18 +13,10 @@
 .features__title {
   margin: 0;
   margin-bottom: 40px;
-=======
-
-.features__title {
->>>>>>> 1b404cd113af47c7c2c7d7621f3bb1d8715f7c37
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 40px;
   color: $black;
-<<<<<<< HEAD
-=======
-
->>>>>>> 1b404cd113af47c7c2c7d7621f3bb1d8715f7c37
 }
 
 .features__list {
@@ -92,34 +83,6 @@
   }
 }
 
-<<<<<<< HEAD
-=======
-
-.features__item {
-  position: relative;
-}
-
-.features__item::before {
-  content: "";
-  background-color: $base-green;
-  width: 60px;
-  height: 60px;
-  display: block;
-}
-
-.features__item--nutrients::after {
-  content: "";
-  background-image: url("../../icons/stack.svg#leaf");
-  background-repeat: no-repeat;
-  background-size: 25px 28px;
-  width: 25px;
-  height: 28px;
-  position: absolute;
-  top: 16px;
-  left: 18px;
-}
-
->>>>>>> 1b404cd113af47c7c2c7d7621f3bb1d8715f7c37
 .features__item--powder::after {
   content: "";
   background-image: url("../../icons/stack.svg#powder");
@@ -132,7 +95,6 @@
   left: 18px;
 }
 
-<<<<<<< HEAD
 .features__item--exchange {
   @media (min-width: $tablet-width) {
     width: 247px;
@@ -144,8 +106,6 @@
   }
 }
 
-=======
->>>>>>> 1b404cd113af47c7c2c7d7621f3bb1d8715f7c37
 .features__item--exchange::after {
   content: "";
   background-image: url("../../icons/stack.svg#eat");
@@ -158,7 +118,6 @@
   left: 18px;
 }
 
-<<<<<<< HEAD
 .features__item--improvement {
   @media (min-width: $tablet-width) {
     width: 249px;
@@ -170,8 +129,6 @@
   }
 }
 
-=======
->>>>>>> 1b404cd113af47c7c2c7d7621f3bb1d8715f7c37
 .features__item--improvement::after {
   content: "";
   background-image: url("../../icons/stack.svg#clock");
@@ -185,7 +142,6 @@
 }
 
 .features__description {
-<<<<<<< HEAD
   position: relative;
   margin: 0;
   padding-left: 80px;
@@ -194,8 +150,5 @@
     padding: 0;
     padding-top: 151px;
   }
-=======
-  margin-left: 80px;
->>>>>>> 1b404cd113af47c7c2c7d7621f3bb1d8715f7c37
 }
 

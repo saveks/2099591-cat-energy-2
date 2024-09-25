@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .main-navigation {
   @media (min-width: $tablet-width) {
     width: 436px;
@@ -9,8 +8,6 @@
     width: 475px;
   }
 }
-=======
->>>>>>> 1b404cd113af47c7c2c7d7621f3bb1d8715f7c37
 
 .main-navigation__toggle {
   background-image: url("../../icons/stack.svg#open-menu");
@@ -21,23 +18,16 @@
   border: none;
   width: 24px;
   height: 24px;
-<<<<<<< HEAD
 
   @media (min-width: $tablet-width) {
     display: none;
   }
-=======
->>>>>>> 1b404cd113af47c7c2c7d7621f3bb1d8715f7c37
 }
 
 .main-navigation__toggle--close {
   background-image: url("../../icons/stack.svg#close-menu");
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 1b404cd113af47c7c2c7d7621f3bb1d8715f7c37
 .main-navigation__list {
   display: flex;
   flex-flow: column wrap;
@@ -70,13 +60,7 @@
 }
 
 .main-navigation__link {
-<<<<<<< HEAD
   color: $black;
-=======
-
-  color: $black;
-
->>>>>>> 1b404cd113af47c7c2c7d7621f3bb1d8715f7c37
   text-decoration: none;
 
   @media (min-width: $desktop-width) {

@@ -2,23 +2,14 @@
   min-height: 480px;
   margin-bottom: 20px;
   font-family: $secondary-font;
-<<<<<<< HEAD
-=======
-
->>>>>>> 1b404cd113af47c7c2c7d7621f3bb1d8715f7c37
   font-weight: 400;
   color: $white;
   background-image:
     linear-gradient(rgba(104, 183, 56, 0.85) 63%, $white 63%),
     url("../../images/cat-licking@1x.jpg");
   background-repeat: no-repeat;
-<<<<<<< HEAD
   background-position: center, -160px -40px;
   background-size: cover, 180%;
-=======
-  background-position: center top;
-  background-size: 100% auto;
->>>>>>> 1b404cd113af47c7c2c7d7621f3bb1d8715f7c37
 
   @media (min-resolution: 2dppx) {
     background-image:
@@ -27,33 +18,23 @@
   }
 
   @media (min-width: $tablet-width) {
-<<<<<<< HEAD
     min-height: 875px;
     margin: 0;
-=======
->>>>>>> 1b404cd113af47c7c2c7d7621f3bb1d8715f7c37
     color: $black;
     background: $white;
   }
 
   @media (min-width: $desktop-width) {
-<<<<<<< HEAD
     position: relative;
     margin-bottom: 82px;
     padding-top: 224px;
-=======
->>>>>>> 1b404cd113af47c7c2c7d7621f3bb1d8715f7c37
     color: $black;
     background-image:
       linear-gradient(90deg, $white 50%, rgba(104, 183, 56, 0.85) 50%),
       url("../../images/cat-licking@1x.jpg");
     background-repeat: no-repeat;
     background-position: top right;
-<<<<<<< HEAD
     background-size: cover;
-=======
-    background-size: 100% auto, 50% auto;
->>>>>>> 1b404cd113af47c7c2c7d7621f3bb1d8715f7c37
 
     @media (min-resolution: 2dppx) {
       background-image:
@@ -61,7 +42,6 @@
         url("../../images/cat-licking@2x.jpg");
     }
   }
-<<<<<<< HEAD
 }
 
 .hero__wrapper {
@@ -73,9 +53,6 @@
   @media (min-width: $tablet-width) {
     align-items: start;
   }
-=======
-
->>>>>>> 1b404cd113af47c7c2c7d7621f3bb1d8715f7c37
 }
 
 .hero__title {
@@ -85,7 +62,6 @@
   padding-top: 25px;
   font-size: 36px;
   line-height: 36px;
-<<<<<<< HEAD
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -100,9 +76,6 @@
   @media (min-width: $desktop-width) {
     margin-left: 80px;
   }
-=======
-
->>>>>>> 1b404cd113af47c7c2c7d7621f3bb1d8715f7c37
 }
 
 .hero__description {
@@ -134,18 +107,10 @@
   }
 }
 
-
-.hero__image-background {
-  position: relative;
-  z-index: -1;
-  object-fit: cover;
-}
-
 .hero__link {
   padding: 10px 63.5px;
   font-size: 16px;
   line-height: 20px;
-<<<<<<< HEAD
   color: $white;
   text-transform: uppercase;
   text-decoration: none;
@@ -161,9 +126,4 @@
   @media (min-width: $desktop-width) {
     margin-left: 80px;
   }
-=======
-  text-transform: uppercase;
-  background-color: $base-green;
-;
->>>>>>> 1b404cd113af47c7c2c7d7621f3bb1d8715f7c37
 }
