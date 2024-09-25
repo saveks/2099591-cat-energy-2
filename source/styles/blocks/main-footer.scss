@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .main-footer {
   min-height: 240px;
   background-color: $grey;
@@ -27,22 +28,32 @@
   padding: 0;
   list-style: none;
   gap: 24px;
+=======
+.main-footer__list {
+  list-style: none;
+>>>>>>> 1b404cd113af47c7c2c7d7621f3bb1d8715f7c37
 }
 
 .main-footer__logo {
   display: block;
   width: 128px;
   height: 24px;
+<<<<<<< HEAD
   margin: 0 auto;
+=======
+>>>>>>> 1b404cd113af47c7c2c7d7621f3bb1d8715f7c37
   mask-image: url("../../images/logo-text.svg");
   mask-repeat: no-repeat;
   mask-size: 128px 24px;
   background-color: #111111;
 
+<<<<<<< HEAD
   @media (min-width: $tablet-width) {
     margin: 0;
   }
 
+=======
+>>>>>>> 1b404cd113af47c7c2c7d7621f3bb1d8715f7c37
   &:hover,
   &:focus {
     background-color: #3e3e3e;

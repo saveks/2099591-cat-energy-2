@@ -1,78 +1,12 @@
-.additional {
-  font-family: $secondary-font;
-}
+.promo {
 
-.additional__wrapper {
-  margin: 0 20px 54px;
-}
-
-.additional__title {
-  margin: 25px 0 49px;
-  font-size: 24px;
-  line-height: 24px;
-<<<<<<< HEAD
-  color: $black;
-}
-
-.additional__list {
-  display: flex;
-  flex-flow: column wrap;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.additional__item {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-  }
-=======
-
-  color: $black;
-
->>>>>>> 1b404cd113af47c7c2c7d7621f3bb1d8715f7c37
-}
-
-.additional__product {
-  font-size: 16px;
-  line-height: 16px;
-  text-transform: uppercase;
-  color: #222222;
-}
-
-.additional__weight {
-  line-height: 14px;
-}
-
-.additional__price {
-  line-height: 14px;
-}
-
-.additional__link {
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-<<<<<<< HEAD
-  color: $white;
-  background-color: $base-green;
-=======
-
-  color: $white;
-  background-color: $base-green;
-
->>>>>>> 1b404cd113af47c7c2c7d7621f3bb1d8715f7c37
-  text-decoration: none;
-}
-
-.additional__promo {
   min-height: 290px;
   background:
     linear-gradient(rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85) 100%),
     url("../../images/cat-backpack-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: cover;
+  background-size: 280px 290px;
 
   @media (min-resolution: 2dppx) {
     background:
@@ -80,7 +14,7 @@
       url("../../images/cat-backpack-mobile@2x.png");
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: cover;
+    background-size: 280px 290px;
   }
 
   @media (min-width: $tablet-width) {
@@ -120,20 +54,20 @@
   }
 }
 
-.additional__promo--text {
-  margin: 0;
-  padding: 187px 61px 43px 58px;
+.promo__image {
+  position: relative;
+  z-index: -1;
+}
+
+.promo__text {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: $white;
 
-  @media (min-width: $tablet-width) {
-    padding: 71px 125px 69px 421px;
-  }
+  color: $white;
 }
 
-.additional__promo--text::before {
+.promo__text::before {
   content: "";
   background-image: url("../../icons/stack.svg#gift");
   background-repeat: no-repeat;
@@ -142,3 +76,4 @@
   height: 80px;
   display: block;
 }
+
