@@ -1,15 +1,44 @@
 .products__list {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin: 0;
+  padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 80px;
+  }
+}
+
+.products__item {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 20px 20px 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 37px 40px;
+    min-height: 511px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 38px 40px;
+  }
 }
 
 .products__link {
+  padding: 10px 109px;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-
   color: $white;
   background-color: $base-green;
-
   text-decoration: none;
 }

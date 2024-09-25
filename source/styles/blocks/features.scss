@@ -1,19 +1,42 @@
+.features__wrapper {
+  margin: 0 20px 49px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 105px 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px;
+  }
+}
 
 .features__title {
+  margin: 0;
+  margin-bottom: 40px;
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 40px;
   color: $black;
-
 }
 
 .features__list {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   list-style: none;
-}
+  gap: 20px;
 
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 37px;
+  }
+}
 
 .features__item {
   position: relative;
+  min-height: 60px;
 }
 
 .features__item::before {
@@ -22,6 +45,18 @@
   width: 60px;
   height: 60px;
   display: block;
+  position: absolute;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+}
+
+.features__item--nutrients {
+  @media (min-width: $tablet-width) {
+    width: 230px;
+    min-height: 280px;
+  }
 }
 
 .features__item--nutrients::after {
@@ -36,6 +71,18 @@
   left: 18px;
 }
 
+.features__item--powder {
+  @media (min-width: $tablet-width) {
+    width: 246px;
+    min-height: 280px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
+}
+
 .features__item--powder::after {
   content: "";
   background-image: url("../../icons/stack.svg#powder");
@@ -48,6 +95,17 @@
   left: 18px;
 }
 
+.features__item--exchange {
+  @media (min-width: $tablet-width) {
+    width: 247px;
+    min-height: 280px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 248px;
+  }
+}
+
 .features__item--exchange::after {
   content: "";
   background-image: url("../../icons/stack.svg#eat");
@@ -58,6 +116,17 @@
   position: absolute;
   top: 16px;
   left: 18px;
+}
+
+.features__item--improvement {
+  @media (min-width: $tablet-width) {
+    width: 249px;
+    min-height: 280px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 250px;
+  }
 }
 
 .features__item--improvement::after {
@@ -73,6 +142,12 @@
 }
 
 .features__description {
-  margin-left: 80px;
-}
+  position: relative;
+  margin: 0;
+  padding-left: 80px;
 
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-top: 151px;
+  }
+}
