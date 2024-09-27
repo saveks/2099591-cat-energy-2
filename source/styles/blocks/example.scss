@@ -77,11 +77,14 @@
 .example__item {
   display: flex;
   flex-direction: column;
+  border: 1px solid #cdcdcd;
 }
 
 .example__value {
+  padding: 14.5px 0 17.5px;
   font-family: $secondary-font;
   font-size: 24px;
+  text-align: center;
   line-height: 24px;
   color: $black;
 }
