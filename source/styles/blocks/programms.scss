@@ -157,13 +157,15 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 295px;
+    margin-left: 162px;
     margin-bottom: 73px;
-    text-align: center;
   }
 }
 
 .programms__description {
   margin: 0;
+  margin-bottom: 38px;
   text-align: left;
 
   @media (min-width: $tablet-width) {
@@ -184,7 +186,7 @@
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   color: $black;
   text-decoration: none;
@@ -194,14 +196,16 @@
   }
 
   @media (min-width: $tablet-width) {
+    width: 165px;
+    height: 38px;
     font-size: 20px;
     line-height: 29.6px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 108px;
+    width: 168px;
     height: 30px;
-    padding-right: 50px;
+    padding-right: 60px;
     text-align: start;
   }
 }
@@ -212,11 +216,22 @@
   display: block;
   width: 24px;
   height: 12px;
+  top: 3px;
+  right: 8px;
   background-color: $black;
   mask-image: url("../../icons/stack.svg#arrow");
   mask-repeat: no-repeat;
   mask-size: 24px 12px;
   mask-position: 100%;
+
+  @media (min-width: $tablet-width) {
+    top: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 8px;
+    right: 11px;
+  }
 }
 
 .programms__link:active::after {
