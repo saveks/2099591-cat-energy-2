@@ -58,7 +58,7 @@
     margin: 0 auto;
 
     display: grid;
-    grid-template-columns: 190px 367px 123px 429px;
+    grid-template-columns: 190px 244px 123px 163px 389px;
     grid-template-rows: 81px auto auto auto auto;
   }
 }
@@ -127,7 +127,7 @@
 
   @media (min-width: $desktop-width) {
     grid-row: 1/6;
-    grid-column: 3/5;
+    grid-column: 4/6;
     margin: 0;
   }
 }
