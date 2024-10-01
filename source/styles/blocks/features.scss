@@ -1,12 +1,14 @@
 .features {
-  margin-bottom: 49px;
+  padding-bottom: 49px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 92px;
+    padding: 0;
+    border-bottom: 1px solid $grey;
   }
 
   @media (min-width: $desktop-width) {
     //margin-bottom: 92px;
+    border: none;
   }
 }
 

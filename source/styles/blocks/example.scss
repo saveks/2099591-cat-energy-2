@@ -1,5 +1,13 @@
 .example {
   background-color: $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient($white 57%, $dark-grey 57%);
+  }
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient($white 23%, $dark-grey 23%);
+  }
 }
 
 .example__wrapper {
@@ -100,6 +108,14 @@
   text-align: center;
   margin-top: -10px;
   background-color: $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $dark-grey;
+  }
 }
 
 .example__costs {

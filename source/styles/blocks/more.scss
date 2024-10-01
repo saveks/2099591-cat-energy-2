@@ -1,4 +1,6 @@
 .more {
+  display: flex;
+  flex-flow: column wrap;
   background-image: url("../../icons/stack.svg#plus");
   background-repeat: no-repeat;
   background-size: 30px 30px;

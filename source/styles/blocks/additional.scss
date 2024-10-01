@@ -22,6 +22,9 @@
 }
 
 .additional__item {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
@@ -44,6 +47,7 @@
 }
 
 .additional__link {
+  padding: 10px 109px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
