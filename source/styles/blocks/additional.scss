@@ -17,13 +17,16 @@
   display: flex;
   flex-flow: column wrap;
   margin: 0;
+  margin-bottom: 35px;
   padding: 0;
   list-style: none;
 }
 
 .additional__item {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -32,6 +35,10 @@
 }
 
 .additional__product {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  margin: 0;
+  margin-bottom: 13px;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -39,14 +46,25 @@
 }
 
 .additional__weight {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin-bottom: 15px;
+  font-family: $primary-font;
   line-height: 14px;
 }
 
 .additional__price {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  font-family: $primary-font;
   line-height: 14px;
+  text-align: end;
 }
 
 .additional__link {
+  grid-column: 1/3;
+  grid-row: 3/3;
+  margin-bottom: 19px;
   padding: 10px 109px;
   font-size: 16px;
   line-height: 20px;
@@ -111,9 +129,11 @@
   }
 }
 
-.additional__promo--text {
+.additional__promo-text {
+  position: relative;
   margin: 0;
   padding: 187px 61px 43px 58px;
+  font-family: $primary-font;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -124,12 +144,14 @@
   }
 }
 
-.additional__promo--text::before {
+.additional__promo-text::before {
   content: "";
+  position: absolute;
   background-image: url("../../icons/stack.svg#gift");
   background-repeat: no-repeat;
   background-size: 78px 80px;
   width: 78px;
   height: 80px;
-  display: block;
+  top: 59px;
+  left: 101px;
 }

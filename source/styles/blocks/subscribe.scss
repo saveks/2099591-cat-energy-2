@@ -3,14 +3,36 @@
   color: $black;
 }
 
+.subscribe__wrapper {
+  margin: 0 20px 40px;
+}
+
 .subscribe__title {
+  margin: 0;
+  margin-bottom: 32px;
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
 }
 
 .subscribe__text {
   margin: 0;
+  margin-bottom: 24px;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
+}
+
+.subscribe__field {
+  min-width: 280px;
+  margin-bottom: 16px;
+  padding: 13px;
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 29.6px;
+  text-transform: uppercase;
+}
+
+.subscribe__button {
+  padding: 15px 81.5px;
 }

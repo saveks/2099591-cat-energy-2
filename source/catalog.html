@@ -16,14 +16,14 @@
 <body class="page__body">
 
   <header class="main-header">
-    <a class="main-header__logo logo-link" href="#">
+    <a class="main-header__logo logo-link" href="index.html">
       <picture>
         <source media="(min-width: 1024px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
         <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
         <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
       </picture>
     </a>
-    <a class="main-header__logo main-header__logo--text" href="#">
+    <a class="main-header__logo main-header__logo--text" href="index.html">
       <picture>
         <source media="(min-width: 1024px)" srcset="images/logo-text.svg" width="118" height="21" type="image/svg+xml">
         <source media="(min-width: 768px)" srcset="images/logo-text.svg" width="101" height="18" type="image/svg+xml">
@@ -59,7 +59,7 @@
         <ul class="products__list">
           <li class="products__item card">
             <a class="card__link-picture" href="#">
-              <picture>
+              <picture class="card__picture">
                 <source width="161" height="172" type="image/png" media="(min-width: 768px)" srcset="/images/card-chiken500-tablet@1x.png 1x, /images/card-chiken500-tablet@2x.png 2x">
                 <img class="card__image" src="/images/card-chiken500-mobile@1x.png" srcset="/images/card-chiken500-mobile@2x.png 2x" width="68" height="86" alt="Упаковка Cat Energy PRO 500 г Курица.">
               </picture>
@@ -279,7 +279,7 @@
           <li class="products__item more">
             <h3 class="more__title">Показать еще 100500 товаров</h3>
             <p class="more__text">На самом деле вкусов гораздо больше!</p>
-            <a class="more__link" href="#">показать все</a>
+            <a class="more__link button-secondary" href="#">показать все</a>
           </li>
         </ul>
       </div>
@@ -291,8 +291,10 @@
         <ul class="additional__list">
           <li class="additional__item">
             <h3 class="additional__product">Сахарозаменитель</h3>
+
             <span class="additional__weight">1 упаковка (100 г)</span>
             <span class="additional__price">200 ₽</span>
+
             <a class="additional__link button-primary" href="#">заказать</a>
           </li>
           <li class="additional__item">
@@ -321,18 +323,20 @@
     </section>
 
     <section class="subscribe">
-      <h2 class="subscribe__title">Акции и новинки</h2>
-      <p class="subscribe__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
-      <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="subscribe__input">
-          <span class="visually-hidden">Ваш e-mail</span>
-          <input class="field" placeholder="Ваш e-mail" type="email" name="email" value="kuklachev@gmail.com" required>
-        </label>
-        <button class="subscribe__button button-primary" type="submit">Подписаться</button>
-      </form>
+      <div class="subscribe__wrapper">
+        <h2 class="subscribe__title">Акции и новинки</h2>
+        <p class="subscribe__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
+        <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="subscribe__input">
+            <span class="visually-hidden">Ваш e-mail</span>
+            <input class="subscribe__field" placeholder="Ваш e-mail" type="email" name="email" value="kuklachev@gmail.com" required>
+          </label>
+          <button class="subscribe__button button-primary" type="submit">Подписаться</button>
+        </form>
+      </div>
     </section>
 
-    <section class="map">
+    <section class="map map--inner">
       <h2 class="visually-hidden">Карта.</h2>
       <div class="map__wrapper">
         <p class="map__text">приглашаем к сотрудничеству дилеров!</p>

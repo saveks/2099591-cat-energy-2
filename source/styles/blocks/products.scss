@@ -5,7 +5,6 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  gap: 25px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -35,20 +34,23 @@
 
 .products__item {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 40px;
-  grid-row-gap: 17px;
+  grid-template-columns: 20px 1fr 1fr 20px;
+  grid-template-rows: 20px auto auto;
+  width: 100%;
+  border-bottom: 1px solid #ebebeb;
 }
 
 .products__link {
+  grid-column: 2/4;
+  grid-row: 3/4;
+  margin-bottom: 25px;
   padding: 10px 109px;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
   text-transform: uppercase;
   color: $white;
   background-color: $base-green;
   text-decoration: none;
-  grid-column: 1/4;
-  grid-row: 2/3;
 }
