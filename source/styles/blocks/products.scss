@@ -1,3 +1,9 @@
+.products {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 74px;
+  }
+}
+
 .products__list {
   display: flex;
   flex-flow: column wrap;
@@ -8,6 +14,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    margin: 0 30px;
     gap: 60px;
   }
 
@@ -37,7 +44,18 @@
   grid-template-columns: 20px 1fr 1fr 20px;
   grid-template-rows: 20px auto auto;
   width: 100%;
+  min-height: 511px;
   border-bottom: 1px solid #ebebeb;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    max-width: 324px;
+    padding: 15px 37px 40px;
+    align-items: center;
+    background: linear-gradient(180deg, $white 16%, $grey 16%);
+    border: none;
+  }
 }
 
 .products__link {
@@ -53,4 +71,9 @@
   color: $white;
   background-color: $base-green;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 10px 94px;
+  }
 }
