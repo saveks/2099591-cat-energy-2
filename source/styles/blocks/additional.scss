@@ -4,6 +4,15 @@
 
 .additional__wrapper {
   margin: 0 20px 54px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    margin: 0 110px;
+  }
 }
 
 .additional__title {
@@ -18,6 +27,11 @@
     font-size: 32px;
     line-height: 32px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+  }
 }
 
 .additional__list {
@@ -31,6 +45,10 @@
   @media (min-width: $tablet-width) {
     //padding: 26px 38px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 896px;
+  }
 }
 
 .additional__item {
@@ -40,10 +58,16 @@
 
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 150px 91px;
     grid-template-rows: auto auto;
     padding: 26px 38px 28px;
     border: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0 17px;
   }
 }
 
@@ -64,6 +88,11 @@
     line-height: 20px;
     font-weight: 400;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 250px;
+    margin: 0;
+  }
 }
 
 .additional__weight {
@@ -76,8 +105,14 @@
   @media (min-width: $tablet-width) {
     grid-column: 2/3;
     grid-row: 1/2;
+    margin-left: auto;
     font-size: 16px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+    margin: 0;
   }
 }
 
@@ -93,6 +128,11 @@
     grid-row: 1/2;
     font-size: 16px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    margin: 0;
   }
 }
 
@@ -134,12 +174,13 @@
   }
 
   @media (min-width: $tablet-width) {
+    min-height: 200px;
     background:
       linear-gradient(rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85) 100%),
       url("../../images/cat-backpack-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: 707px 200px;
+    background-size: 100% 200px;
 
     @media (min-resolution: 2dppx) {
       background:
@@ -147,11 +188,17 @@
         url("../../images/cat-backpack-tablet@2x.png");
       background-repeat: no-repeat;
       background-position: center top;
-      background-size: 707px 200px;
+      background-size: 100% 200px;
     }
   }
 
   @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 120px;
+    right: 0;
+    width: 245px;
+    min-height: 288px;
+    margin-left: 80px;
     background:
       linear-gradient(rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85) 100%),
       url("../../images/cat-backpack-desktop@1x.png");
@@ -170,6 +217,23 @@
   }
 }
 
+.additional__promo-text::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/stack.svg#gift");
+  background-repeat: no-repeat;
+  background-size: 78px 80px;
+  width: 78px;
+  height: 80px;
+  top: 59px;
+  left: 101px;
+
+  @media (min-width: $desktop-width) {
+    top: 56px;
+    left: 83px;
+  }
+}
+
 .additional__promo-text {
   position: relative;
   margin: 0;
@@ -183,16 +247,8 @@
   @media (min-width: $tablet-width) {
     padding: 71px 125px 69px 421px;
   }
-}
 
-.additional__promo-text::before {
-  content: "";
-  position: absolute;
-  background-image: url("../../icons/stack.svg#gift");
-  background-repeat: no-repeat;
-  background-size: 78px 80px;
-  width: 78px;
-  height: 80px;
-  top: 59px;
-  left: 101px;
+  @media (min-width: $desktop-width) {
+    padding: 185px 42px 43px;
+  }
 }
