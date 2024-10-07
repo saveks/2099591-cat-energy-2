@@ -33,6 +33,18 @@
   font-size: 36px;
   line-height: 40px;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    //margin: 0 110px 69px;
+  }
 }
 
 .features__list {

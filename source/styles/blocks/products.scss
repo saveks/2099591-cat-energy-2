@@ -4,6 +4,10 @@
   }
 }
 
+.products__wrapper {
+  margin: 0 auto;
+}
+
 .products__list {
   display: flex;
   flex-flow: column wrap;
@@ -51,6 +55,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+    justify-content: end;
     max-width: 324px;
     min-height: 511px;
     padding: 15px 37px 40px;
