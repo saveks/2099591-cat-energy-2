@@ -76,14 +76,6 @@
   counter-increment: new 1;
 }
 
-// .features__item::marker {
-//   content: counter(new);
-//   font-family: $secondary-font;
-//   font-size: 280px;
-//   line-height: 280px;
-//   color: $grey;
-// }
-
 .features__item::before {
   content: "";
   background-color: $base-green;

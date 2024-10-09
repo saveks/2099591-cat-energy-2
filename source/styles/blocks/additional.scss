@@ -62,6 +62,7 @@
     grid-template-rows: auto auto;
     padding: 26px 38px 28px;
     border: 1px solid #cdcdcd;
+    border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {

@@ -6,6 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     background: linear-gradient($white 23%, $dark-grey 23%);
   }
 }
@@ -20,6 +21,7 @@
   @media (min-width: $desktop-width) {
     max-width: 1220px;
     margin: 0 auto;
+    padding: 0;
   }
 }
 
@@ -35,6 +37,10 @@
     font-size: 60px;
     line-height: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
+  }
 }
 
 .example__content {
@@ -44,8 +50,8 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 162px 162px 1fr;
-    grid-template-rows: 77px 77px;
-    min-height: 303px;
+    grid-template-rows: auto auto;
+    margin-bottom: 99px;
   }
 
   @media (min-width: $desktop-width) {
@@ -64,6 +70,9 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 4;
+    margin-bottom: 55px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -103,6 +112,11 @@
   color: $black;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__caption {
@@ -115,6 +129,8 @@
   background-color: $dark-grey;
 
   @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
     background-color: $white;
   }
 
@@ -134,40 +150,57 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+    font-size: 20px;
     text-align: end;
+    gap: 9px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 75px;
     text-align: center;
   }
 }
 
 .example__slider {
-  //display: flex;
-}
-
-.example__image {
   position: relative;
-  width: 280px;
-  min-height: 256px;
-  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 4px 1fr;
+  grid-template-rows: auto;
+  margin: 0 auto;
 
-  @media (min-width: $tablet-width) {
-    width: 560px;
-    min-height: 512px;
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
 
+// .example__image {
+//   position: relative;
+//   width: 280px;
+//   min-height: 256px;
+//   overflow: hidden;
+
+//   @media (min-width: $tablet-width) {
+//     width: 560px;
+//     min-height: 512px;
+//   }
+// }
+
 .example__toggle {
+  grid-column: 2/3;
+  grid-row: 1/1;
+  // position: absolute;
+  // left: 159px;
+  width: 4px;
+  height: 256px;
+  padding: 0;
   background-color: #666666;
   border: none;
   border-radius: 2px;
-  width: 4px;
-  height: 512px;
-  padding: 0;
-  position: absolute;
+  z-index: 1;
 
   &:hover,
   &:focus {
@@ -177,6 +210,10 @@
   &:active {
     background-color: $base-green;
     opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 512px;
   }
 }
 
@@ -188,10 +225,14 @@
   width: 40px;
   height: 40px;
   position: absolute;
-  top: 50%;
+  top: 108px;
   left: 50%;
   transform: translate(-50%);
   display: block;
+
+  @media (min-width: $tablet-width) {
+    top: 236px;
+  }
 }
 
 .example__toggle:hover::before,
@@ -209,14 +250,19 @@
   width: 24px;
   height: 18px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  // transform: translate(-50% -50%);
+  top: 119px;
+  left: 128px;
+  //transform: translate(-50% -50%);
   display: block;
   mask-image: url("../../icons/stack.svg#slider-arrow");
   mask-repeat: no-repeat;
   mask-size: 24px 18px;
   mask-position: 50%;
+
+  @media (min-width: $tablet-width) {
+    top: 247px;
+    left: 268px;
+  }
 }
 
 .example__toggle:hover::after,
@@ -227,4 +273,14 @@
 .example__toggle:active::after {
   background-color: $base-green;
   opacity: 0.6;
+}
+
+.example__image--slim {
+  position: absolute;
+  top: 0;
+  left: -140px;
+
+  @media (min-width: $tablet-width) {
+    left: -280px;
+  }
 }
