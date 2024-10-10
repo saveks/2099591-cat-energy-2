@@ -61,7 +61,7 @@
     grid-template-columns: 1fr 150px 91px;
     grid-template-rows: auto auto;
     padding: 26px 38px 28px;
-    border: 1px solid #cdcdcd;
+    border: 1px solid $special-grey-2;
     border-bottom: none;
   }
 
@@ -69,6 +69,12 @@
     display: flex;
     justify-content: space-between;
     padding: 15px 0 17px;
+  }
+}
+
+.additional__item:last-child {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $special-grey-2;
   }
 }
 
