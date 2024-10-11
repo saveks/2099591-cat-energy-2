@@ -17,6 +17,10 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 66px 110px;
+  }
 }
 
 .main-footer__list {
@@ -41,6 +45,11 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    mask-position: center;
+    height: 37px;
   }
 
   &:hover,

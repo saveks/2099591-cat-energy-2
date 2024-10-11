@@ -83,8 +83,8 @@
   @media (min-width: $desktop-width) {
     width: 100px;
     height: 100px;
-    top: 41px;
-    left: 53px;
+    top: 47px;
+    left: 52px;
   }
 }
 
@@ -217,7 +217,7 @@
   @media (min-width: $desktop-width) {
     width: 168px;
     height: 30px;
-    padding-right: 60px;
+    padding: 4px 60px 4px 0;
     text-align: start;
   }
 }
@@ -241,7 +241,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 8px;
+    top: 13px;
     right: 11px;
   }
 }

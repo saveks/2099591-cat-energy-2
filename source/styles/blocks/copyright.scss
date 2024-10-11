@@ -15,7 +15,7 @@
   content: "";
   display: block;
   position: absolute;
-  top: 0;
+  top: 2px;
   right: 0;
   width: 27px;
   height: 34px;
@@ -32,4 +32,10 @@
 
 .copyright:active::after {
   background-color: rgba(104, 183, 56, 0.3);
+}
+
+.copyright__text {
+  @media (min-width: $desktop-width) {
+    padding: 8.5px 0;
+  }
 }

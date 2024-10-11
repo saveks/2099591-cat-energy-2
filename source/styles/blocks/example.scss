@@ -2,6 +2,7 @@
   background-color: $dark-grey;
 
   @media (min-width: $tablet-width) {
+    padding: 0 30px;
     background: linear-gradient($white 57%, $dark-grey 57%);
   }
 
@@ -15,7 +16,9 @@
   padding: 25px 20px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 45px 30px;
+    margin: 0 auto;
+    padding: 0;
+    //padding: 45px 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,6 +37,7 @@
   color: $black;
 
   @media (min-width: $tablet-width) {
+    margin: 45px 0 60px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -52,6 +56,7 @@
     grid-template-columns: 162px 162px 1fr;
     grid-template-rows: auto auto;
     margin-bottom: 99px;
+    column-gap: 43px;
   }
 
   @media (min-width: $desktop-width) {
@@ -61,6 +66,7 @@
     display: flex;
     flex-direction: column;
     max-width: 450px;
+    margin-bottom: 0;
   }
 }
 
@@ -76,7 +82,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 1 / 3;
+    //grid-column: 1 / 3;
+    margin-bottom: 69px;
   }
 }
 
@@ -93,7 +100,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 1 / 2;
+    //grid-column: 1 / 2;
+    justify-content: normal;
+    margin-bottom: 55px;
+    gap: 42px;
   }
 }
 
@@ -101,6 +111,10 @@
   display: flex;
   flex-direction: column;
   width: 124px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+  }
 }
 
 .example__value {
@@ -116,6 +130,10 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 20px;
   }
 }
 
@@ -135,7 +153,15 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 114px;
+    margin-top: -7px;
     background-color: $dark-grey;
+  }
+}
+
+.example__caption--time {
+  @media (min-width: $desktop-width) {
+    width: 142px;
   }
 }
 
@@ -157,9 +183,15 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: normal;
     margin-bottom: 75px;
     text-align: center;
+  }
+}
+
+.example__text {
+  @media (min-width: $desktop-width) {
+    margin-right: 60px;
   }
 }
 
@@ -173,7 +205,7 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 110px;
   }
 }
 
