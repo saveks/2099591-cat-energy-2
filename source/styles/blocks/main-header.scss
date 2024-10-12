@@ -3,18 +3,19 @@
   display: flex;
   justify-content: space-between;
   place-items: center center;
-  margin: 13px 21px 14px 20px;
+  padding: 13px 21px 14px 20px;
 
   @media (min-width: $tablet-width) {
-    margin: 25px 34px 65px 30px;
+    padding: 25px 34px 0 30px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 0;
+    top: 55px;
     right: 0;
-    min-width: 1220px;
+    max-width: 1220px;
     height: 59px;
+    padding: 0;
     z-index: 1;
   }
 }

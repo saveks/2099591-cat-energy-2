@@ -1,29 +1,24 @@
 .features {
-  padding-bottom: 49px;
+  padding: 0 20px 47px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding: 0 109px 0 30px;
     border-bottom: 1px solid $grey;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 69px;
+    padding: 0 106px 0 110px;
     border: none;
   }
 }
 
 .features__wrapper {
   margin: 0 auto;
-  //margin: 0 20px 49px;
-
-  @media (min-width: $tablet-width) {
-    //margin: 0 105px 0 30px;
-  }
 
   @media (min-width: $desktop-width) {
     max-width: 1220px;
     margin: 0 auto;
-    //margin: 0 110px 69px;
   }
 }
 
@@ -52,7 +47,7 @@
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
-  margin: 0 20px;
+  margin: 0;
   padding: 0;
   list-style: none;
   gap: 20px;
@@ -60,14 +55,16 @@
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
-    margin: 0 105px 0 30px;
+    //margin: 0 105px 0 30px;
     flex-direction: row;
+    padding-bottom: 41px;
     gap: 37px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1220px;
     margin: 0;
+    padding: 0;
   }
 }
 
@@ -78,12 +75,14 @@
 }
 
 .features__item::before {
+  display: block;
   content: "";
-  background-color: $base-green;
+  position: absolute;
   width: 60px;
   height: 60px;
-  display: block;
-  position: absolute;
+  top: -2px;
+  left: 0;
+  background-color: $base-green;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -112,7 +111,7 @@
   width: 25px;
   height: 28px;
   position: absolute;
-  top: 16px;
+  top: 14px;
   left: 18px;
 
   @media (min-width: $tablet-width) {
@@ -141,7 +140,7 @@
   width: 25px;
   height: 28px;
   position: absolute;
-  top: 16px;
+  top: 15px;
   left: 18px;
 
   @media (min-width: $tablet-width) {
@@ -169,7 +168,7 @@
   width: 25px;
   height: 30px;
   position: absolute;
-  top: 16px;
+  top: 12px;
   left: 18px;
 
   @media (min-width: $tablet-width) {
@@ -197,7 +196,7 @@
   width: 26px;
   height: 31px;
   position: absolute;
-  top: 16px;
+  top: 13px;
   left: 18px;
 
   @media (min-width: $tablet-width) {
@@ -214,7 +213,9 @@
   @media (min-width: $tablet-width) {
     position: relative;
     padding: 0;
-    padding-top: 31px;
+    padding-top: 65px;
+    font-size: 16px;
+    line-height: 24px;
 
     &::after {
       position: absolute;
@@ -231,7 +232,5 @@
 
   @media (min-width: $desktop-width) {
     padding: 71px 0 57px;
-    font-size: 16px;
-    line-height: 24px;
   }
 }

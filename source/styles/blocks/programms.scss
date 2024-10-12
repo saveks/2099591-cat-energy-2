@@ -1,28 +1,29 @@
 .programms {
   margin-bottom: 20px;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 45px;
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 71px;
+    padding: 0 110px;
   }
 }
 
 .programms__wrapper {
   display: flex;
   //flex-direction: column;
-  margin: 0 20px 20px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
+    //padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    margin: 0 auto;
-    padding: 0 110px;
   }
 }
 
@@ -75,7 +76,27 @@
   @media (min-width: $tablet-width) {
     width: 200px;
     height: 200px;
-    top: 100px;
+    top: 94px;
+    left: auto;
+    right: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 52px;
+  }
+}
+
+.programms__item--pro::before {
+  top: 22px;
+  left: 21px;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 200px;
+    top: 94px;
     left: auto;
     right: 63px;
   }
@@ -103,9 +124,9 @@
     background-size: 140px 194px;
     width: 140px;
     height: 194px;
-    top: 100px;
+    top: 83px;
     left: auto;
-    right: 85px;
+    right: 93px;
   }
 
   @media (min-width: $desktop-width) {
@@ -126,16 +147,16 @@
   width: 67px;
   height: 28px;
   position: absolute;
-  top: 35px;
-  left: 11px;
+  top: 33px;
+  left: 12px;
 
   @media (min-width: $tablet-width) {
     background-size: 268px 112px;
     width: 268px;
     height: 112px;
-    top: 135px;
+    top: 137px;
     left: auto;
-    right: 35px;
+    right: 29px;
   }
 
   @media (min-width: $desktop-width) {
@@ -150,8 +171,7 @@
 
 .programms__title {
   position: relative;
-  margin: 0;
-  margin-bottom: 29px;
+  margin: 0 0 29px 21px;
   padding: 0;
   font-family: $secondary-font;
   font-size: 24px;
@@ -162,6 +182,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 340px;
+    margin: 0;
     margin-bottom: 24px;
     font-size: 36px;
     line-height: 36px;
@@ -175,18 +196,44 @@
   }
 }
 
+.programms__item--pro .programms__title {
+  margin-left: 51px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 162px;
+  }
+}
+
 .programms__description {
+  position: relative;
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 40px;
   text-align: left;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
     font-size: 16px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 23px;
+  }
+}
+
+.programms__description::after {
+  @media (max-width: $mobile-width-only) {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 113px;
+    left: 0;
+    background-color: $special-dark-grey;
   }
 }
 
@@ -248,4 +295,8 @@
 
 .programms__link:active::after {
   opacity: 0.3;
+}
+
+.programms__link-text {
+  padding: 4px 0;
 }
