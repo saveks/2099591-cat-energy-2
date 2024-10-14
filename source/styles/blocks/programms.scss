@@ -7,7 +7,7 @@
     padding: 0 30px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-full-width) {
     margin-bottom: 71px;
     padding: 0 110px;
   }
@@ -22,7 +22,7 @@
     //padding: 0 30px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-full-width) {
     flex-direction: row;
   }
 }
@@ -39,7 +39,7 @@
     gap: 30px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-full-width) {
     gap: 80px;
   }
 }
@@ -55,7 +55,7 @@
     min-height: 372px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-full-width) {
     padding: 77px 61px 55px 52px;
     max-width: 570px;
     min-height: 374px;
@@ -81,7 +81,7 @@
     right: 63px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-full-width) {
     width: 100px;
     height: 100px;
     top: 47px;
@@ -101,7 +101,7 @@
     right: 63px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-full-width) {
     width: 100px;
     height: 100px;
     top: 47px;
@@ -129,7 +129,7 @@
     right: 93px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-full-width) {
     background-size: 70px 97px;
     width: 70px;
     height: 97px;
@@ -159,7 +159,7 @@
     right: 29px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-full-width) {
     background-size: 134px 56px;
     width: 134px;
     height: 56px;
@@ -189,7 +189,7 @@
     text-align: left;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-full-width) {
     max-width: 295px;
     margin-left: 162px;
     margin-bottom: 73px;
@@ -203,7 +203,7 @@
     margin-left: 0;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-full-width) {
     margin-left: 162px;
   }
 }
@@ -220,7 +220,7 @@
     line-height: 24px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-full-width) {
     margin-bottom: 23px;
   }
 }
@@ -261,7 +261,7 @@
     line-height: 29.6px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-full-width) {
     width: 168px;
     height: 30px;
     padding: 4px 60px 4px 0;
@@ -287,7 +287,7 @@
     top: 8px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-full-width) {
     top: 13px;
     right: 11px;
   }

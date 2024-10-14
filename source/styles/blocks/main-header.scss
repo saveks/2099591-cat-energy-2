@@ -12,11 +12,17 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 55px;
-    right: 0;
-    max-width: 1220px;
+    left: 0;
+    width: 100%;
+    max-width: 1024px;
     height: 59px;
+    margin: 0 60px;
     padding: 0;
     z-index: 1;
+  }
+
+  @media (min-width: $desktop-full-width) {
+    max-width: 1220px;
   }
 }
 
@@ -51,4 +57,10 @@
 
 .main-header--inner {
   position: static;
+  margin-bottom: 27px;
+  border-bottom: 1px solid $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+  }
 }

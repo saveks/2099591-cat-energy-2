@@ -1,9 +1,11 @@
 .additional {
+  padding: 0 20px;
+  margin-bottom: 54px;
   font-family: $secondary-font;
 }
 
 .additional__wrapper {
-  margin: 0 20px 54px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     margin: 0 30px 80px;
@@ -16,7 +18,7 @@
 }
 
 .additional__title {
-  margin: 25px 0 49px;
+  margin: 25px 0 36px;
   font-size: 24px;
   line-height: 24px;
   color: $black;
@@ -55,6 +57,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto;
+  border-top: 1px solid $special-grey-2;
 
 
   @media (min-width: $tablet-width) {
@@ -73,6 +76,8 @@
 }
 
 .additional__item:last-child {
+  border-bottom: 1px solid $special-grey-2;
+
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $special-grey-2;
   }
@@ -83,6 +88,7 @@
   grid-row: 1/2;
   margin: 0;
   margin-bottom: 13px;
+  padding-top: 13px;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
