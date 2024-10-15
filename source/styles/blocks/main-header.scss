@@ -18,7 +18,7 @@
     height: 59px;
     margin: 0 60px;
     padding: 0;
-    z-index: 1;
+    z-index: 5;
   }
 
   @media (min-width: $desktop-full-width) {
@@ -47,11 +47,13 @@
   @media (min-width: $tablet-width) {
     width: 101px;
     height: 50px;
+    margin-left: 12px;
   }
 
   @media (min-width: $desktop-width) {
     width: 118px;
     height: 59px;
+    margin-left: 0;
   }
 }
 
@@ -62,5 +64,6 @@
 
   @media (min-width: $tablet-width) {
     color: $black;
+    border: none;
   }
 }

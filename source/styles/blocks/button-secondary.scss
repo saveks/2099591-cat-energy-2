@@ -7,4 +7,10 @@
   color: $base-color-text;
   background-color: $grey;
   border: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #ebebeb;
+  }
 }
