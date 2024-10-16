@@ -136,3 +136,9 @@
     color: $white;
   }
 }
+
+.main-header--inner .main-navigation__link {
+  @media (min-width: $desktop-width) {
+    color: $black;
+  }
+}

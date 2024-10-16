@@ -10,9 +10,13 @@
 
   @media (min-width: $tablet-width) {
     min-height: 210px;
-    margin-bottom: 22px;
+    //margin-bottom: 22px; было по макету, уменьшила, чтобы заголовки встали
+    margin-bottom: 17px;
     padding: 0;
     padding-top: 10px;
+
+    // grid-column: 2/3;
+    // grid-row: 2/3;
   }
 }
 
@@ -33,6 +37,9 @@
   @media (min-width: $tablet-width) {
     width: 100%;
     margin-bottom: 27px;
+
+    // grid-column: 2/3;
+    // grid-row: 3/4;
   }
 }
 
@@ -74,21 +81,21 @@
   padding: 0;
 }
 
-.card-properties__item {
-  position: relative;
+// .card-properties__item {
+//   position: relative;
 
-  @media (min-width: $tablet-width) {
-    position: relative;
-    margin-bottom: 10px;
+//   @media (min-width: $tablet-width) {
+//     position: relative;
+//     margin-bottom: 10px;
 
-    &::after {
-      position: absolute;
-      content: "";
-      top: 25px;
-      left: 0;
-      width: 100%;
-      height: 1px;
-      background-color: $special-grey-2;
-    }
-  }
-}
+//     &::after {
+//       position: absolute;
+//       content: "";
+//       top: 25px;
+//       left: 0;
+//       width: 100%;
+//       height: 1px;
+//       background-color: $special-grey-2;
+//     }
+//   }
+// }

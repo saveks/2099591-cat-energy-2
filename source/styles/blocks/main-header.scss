@@ -63,7 +63,12 @@
   border-bottom: 1px solid $special-dark-grey;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
     color: $black;
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 55px 110px 74px;
   }
 }
