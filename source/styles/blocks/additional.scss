@@ -1,11 +1,29 @@
 .additional {
+  position: relative;
   margin-bottom: 40px;
-  padding: 0 20px;
   font-family: $secondary-font;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 80px;
-    padding: 0 30px;
+  }
+}
+
+.additional::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 9px;
+  left: 0;
+  background-color: $base-green;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    top: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -110px;
   }
 }
 
@@ -23,21 +41,26 @@
 }
 
 .additional__title {
+  width: 286px;
   margin: 25px 0 34px;
+  padding-left: 20px;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
   color: $black;
+  background-color: $white;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
-    margin-bottom: 80px;
+    width: 381px;
+    margin: 0 0 80px 30px;
+    //margin-bottom: 80px;
     padding-left: 40px;
     font-size: 32px;
     line-height: 32px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 456px;
     font-size: 40px;
     line-height: 40px;
   }
@@ -48,17 +71,39 @@
   flex-flow: column wrap;
   margin: 0;
   margin-bottom: 34px;
-  padding: 0;
+  padding: 0 20px;
   list-style: none;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 69px;
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 896px;
   }
 }
+
+// .additional__list::before {
+//   content: "";
+//   position: absolute;
+//   width: calc(100% + 40px);
+//   height: 2px;
+//   top: -49px;
+//   left: -20px;
+//   background-color: $base-green;
+//   z-index: -1;
+
+//   @media (min-width: $tablet-width) {
+//     width: calc(100% + 57px);
+//     top: -98px;
+//     left: -30px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     left: -110px;
+//   }
+// }
 
 .additional__item {
   display: grid;

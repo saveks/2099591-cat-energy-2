@@ -35,7 +35,7 @@
   }
 
   @media (min-width: $desktop-full-width) {
-    gap: 80px;
+    gap: 63px 80px;
   }
 }
 
@@ -68,6 +68,7 @@
   // }
 
   @media (min-width: $desktop-full-width) {
+    justify-content: normal;
     max-width: 245px;
     padding: 17px 36.5px 40px;
   }

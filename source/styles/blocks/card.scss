@@ -18,6 +18,11 @@
     // grid-column: 2/3;
     // grid-row: 2/3;
   }
+
+  @media (min-width: $desktop-full-width) {
+    min-height: 175px;
+    margin-bottom: 26px;
+  }
 }
 
 .card__link-picture--big {
@@ -25,6 +30,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 2px 16px;
+  }
+
+  @media (min-width: $desktop-full-width) {
+    margin-bottom: 11px;
   }
 }
 
@@ -73,6 +82,10 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-full-width) {
+    margin-bottom: 23.4px;
   }
 }
 
