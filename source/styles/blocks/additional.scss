@@ -6,6 +6,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 80px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 96px;
+  }
 }
 
 .additional::before {
@@ -23,6 +27,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    top: 18px;
     left: -110px;
   }
 }
@@ -36,7 +41,7 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
-    margin: 0 110px;
+    //margin: 0 110px;
   }
 }
 
@@ -61,6 +66,7 @@
 
   @media (min-width: $desktop-width) {
     width: 456px;
+    margin-left: 70px;
     font-size: 40px;
     line-height: 40px;
   }
@@ -80,7 +86,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     max-width: 896px;
+    padding: 0;
+    margin: 0;
+    margin-left: 110px;
   }
 }
 
@@ -124,7 +134,10 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 15px 0 17px;
+    border: none;
+    gap: 40px;
   }
 }
 
@@ -133,6 +146,10 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $special-grey-2;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
   }
 }
 
@@ -158,6 +175,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    flex-grow: 1;
     width: 250px;
     margin: 0;
   }
@@ -180,7 +198,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 200px;
+    width: 179px;
     margin: 0;
   }
 }
@@ -222,6 +240,11 @@
     grid-column: 1/4;
     grid-row: 2/3;
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+    padding: 10px auto;
   }
 }
 
@@ -265,10 +288,10 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 120px;
-    right: 0;
+    right: 110px;
     width: 245px;
     min-height: 288px;
-    margin-left: 80px;
+    //margin-left: 80px;
     background:
       linear-gradient(rgba(104, 183, 56, 0.85) 100%, rgba(104, 183, 56, 0.85) 100%),
       url("../../images/cat-backpack-desktop@1x.png");
@@ -326,5 +349,6 @@
 
   @media (min-width: $desktop-width) {
     padding: 185px 42px 43px;
+    text-align: center;
   }
 }

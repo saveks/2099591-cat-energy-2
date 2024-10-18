@@ -72,3 +72,9 @@
     margin: 55px 110px 74px;
   }
 }
+
+.main-header--inner .main-header__logo--text {
+  @media (min-width: $desktop-width) {
+    margin-left: 12px;
+  }
+}

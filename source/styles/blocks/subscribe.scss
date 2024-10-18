@@ -9,6 +9,10 @@
     margin-bottom: 80px;
     //padding: 0 68px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .subscribe::before {
@@ -26,6 +30,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    top: 18px;
     left: -110px;
   }
 }
@@ -95,7 +100,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 344px;
+    padding: 0 344px 104px;
   }
 }
 
