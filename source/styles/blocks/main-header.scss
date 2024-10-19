@@ -9,14 +9,14 @@
     padding: 25px 34px 0 30px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-full-width) {
     position: absolute;
     top: 55px;
-    left: 0;
+    left: 7.6%;
     width: 100%;
     max-width: 1024px;
     height: 59px;
-    margin: 0 60px;
+    //margin: 0 60px;
     padding: 0;
     z-index: 5;
   }
@@ -42,11 +42,13 @@
 
 .main-header__logo--text {
   display: block;
+  margin-right: 9px;
   align-content: center;
 
   @media (min-width: $tablet-width) {
     width: 101px;
     height: 50px;
+    margin-right: 0;
     margin-left: 12px;
   }
 
@@ -76,5 +78,6 @@
 .main-header--inner .main-header__logo--text {
   @media (min-width: $desktop-width) {
     margin-left: 12px;
+    padding-top: 7px;
   }
 }

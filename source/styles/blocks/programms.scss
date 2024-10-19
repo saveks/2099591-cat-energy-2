@@ -90,7 +90,7 @@
 }
 
 .programms__item--pro::before {
-  top: 22px;
+  top: 24px;
   left: 21px;
 
   @media (min-width: $tablet-width) {
@@ -147,7 +147,7 @@
   width: 67px;
   height: 28px;
   position: absolute;
-  top: 33px;
+  top: 35px;
   left: 12px;
 
   @media (min-width: $tablet-width) {
@@ -212,7 +212,7 @@
 .programms__description {
   position: relative;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   text-align: left;
 
   @media (min-width: $tablet-width) {
@@ -240,9 +240,10 @@
 
 .programms__link {
   position: relative;
-  display: block;
+  display: inline-block;
   width: 139px;
   height: 24px;
+  padding: 5px 0;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
@@ -276,8 +277,8 @@
   display: block;
   width: 24px;
   height: 12px;
-  top: 3px;
-  right: 8px;
+  top: 6px;
+  right: 13px;
   background-color: $black;
   mask-image: url("../../icons/stack.svg#arrow");
   mask-repeat: no-repeat;

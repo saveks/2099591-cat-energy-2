@@ -7,8 +7,9 @@
   color: $white;
   background-color: $base-green;
   border: none;
+  cursor: pointer;
 
-  &:hover,
+  &:not(:disabled):hover,
   &:focus {
     background-color: $base-green-2;
   }
@@ -16,5 +17,9 @@
   &:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: $base-green-2;
+  }
+
+  &:disabled {
+    opacity: 30%;
   }
 }

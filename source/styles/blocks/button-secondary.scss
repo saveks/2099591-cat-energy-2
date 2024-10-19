@@ -7,10 +7,15 @@
   color: $base-color-text;
   background-color: $grey;
   border: none;
+  cursor: pointer;
 
-  &:hover,
+  &:not(:disabled):hover,
   &:focus,
   &:active {
     background-color: #ebebeb;
+  }
+
+  &:disabled {
+    opacity: 30%;
   }
 }
