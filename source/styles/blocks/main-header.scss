@@ -55,7 +55,7 @@
   @media (min-width: $desktop-width) {
     width: 118px;
     height: 59px;
-    margin-left: 0;
+    margin-left: 14px;
   }
 }
 
@@ -76,8 +76,10 @@
 }
 
 .main-header--inner .main-header__logo--text {
+  padding-top: 8px;
+
   @media (min-width: $desktop-width) {
-    margin-left: 12px;
-    padding-top: 7px;
+    margin-left: 13px;
+    padding-top: 4px;
   }
 }

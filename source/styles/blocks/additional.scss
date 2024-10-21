@@ -27,6 +27,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: calc(100% + 110px);
     top: 18px;
     left: -110px;
   }
@@ -34,10 +35,6 @@
 
 .additional__wrapper {
   margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    //margin: 0 30px 80px;
-  }
 
   @media (min-width: $desktop-width) {
     position: relative;

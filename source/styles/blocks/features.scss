@@ -56,7 +56,7 @@
   @media (min-width: $tablet-width) {
     max-width: 768px;
     flex-direction: row;
-    padding-bottom: 41px;
+    padding-bottom: 38px;
     gap: 37px;
   }
 
@@ -89,11 +89,11 @@
     position: relative;
     width: 80px;
     height: 80px;
+    top: 32px;
   }
 
   @media (min-width: $desktop-full-width) {
     top: 40px;
-    left: 0;
   }
 }
 
@@ -110,18 +110,18 @@
 
 .features__item--nutrients::after {
   content: "";
+  position: absolute;
   background-image: url("../../icons/stack.svg#leaf");
   background-repeat: no-repeat;
   background-size: 25px 28px;
   width: 25px;
   height: 28px;
-  position: absolute;
   top: 14px;
   left: 18px;
 
   @media (min-width: $tablet-width) {
-    top: 25px;
-    left: 24px;
+    top: 59px;
+    left: 26px;
   }
 
   @media (min-width: $desktop-full-width) {
@@ -137,8 +137,6 @@
   }
 
   @media (min-width: $desktop-full-width) {
-    // width: 202px;
-    // height: 59px;
     margin-right: 79px;
   }
 }
@@ -155,8 +153,8 @@
   left: 18px;
 
   @media (min-width: $tablet-width) {
-    top: 26px;
-    left: 27px;
+    top: 59px;
+    left: 28px;
   }
 
   @media (min-width: $desktop-full-width) {
@@ -188,7 +186,7 @@
   left: 18px;
 
   @media (min-width: $tablet-width) {
-    top: 25px;
+    top: 55px;
     left: 28px;
   }
 
@@ -202,10 +200,12 @@
   @media (min-width: $tablet-width) {
     width: 249px;
     min-height: 280px;
+    padding-left: 4px;
   }
 
   @media (min-width: $desktop-full-width) {
     width: 248px;
+    padding-left: 0;
   }
 }
 
@@ -221,8 +221,8 @@
   left: 18px;
 
   @media (min-width: $tablet-width) {
-    top: 24px;
-    left: 27px;
+    top: 56px;
+    left: 30px;
   }
 
   @media (min-width: $desktop-full-width) {
@@ -238,13 +238,13 @@
   @media (min-width: $tablet-width) {
     position: relative;
     padding: 0;
-    padding-top: 65px;
+    padding-top: 63px;
     font-size: 16px;
     line-height: 24px;
 
     &::after {
       position: absolute;
-      top: -80px;
+      top: -87px;
       right: 7px;
       content: counter(new);
       font-family: $secondary-font;
@@ -257,5 +257,33 @@
 
   @media (min-width: $desktop-full-width) {
     padding: 71px 0 57px;
+
+    &::after {
+      top: -80px;
+    }
+  }
+}
+
+.features__item--powder .features__description::after {
+  @media (min-width: $tablet-width) {
+    right: 1px;
+  }
+}
+
+.features__item--exchange .features__description::after {
+  @media (min-width: $tablet-width) {
+    right: 1px;
+  }
+}
+
+.features__item--improvement .features__description::after {
+  @media (min-width: $tablet-width) {
+    right: -2px;
+  }
+}
+
+.features__shift {
+  @media (max-width: $mobile-width-only) {
+    display: none;
   }
 }
