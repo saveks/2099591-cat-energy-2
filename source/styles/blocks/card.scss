@@ -1,13 +1,90 @@
+.card__picture {
+  display: block;
+}
+
+.card__link-picture {
+  display: block;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding: 10.5px 35px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 210px;
+    //margin-bottom: 22px; было по макету, уменьшила, чтобы заголовки встали
+    margin-bottom: 17px;
+    padding: 0;
+    padding-top: 10px;
+  }
+
+  @media (min-width: $desktop-full-width) {
+    min-height: 175px;
+    margin-bottom: 23px;
+  }
+}
+
+.card__link-picture--big {
+  padding: 3.5px 28px;
+
+  @media (min-width: $tablet-width) {
+    padding: 2px 16px;
+  }
+
+  @media (min-width: $desktop-full-width) {
+    margin-bottom: 7px;
+  }
+}
+
+.card__wripper {
+  width: 140px;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-bottom: 27px;
+  }
+}
+
+.card__link {
+  margin-bottom: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    max-width: 135px;
+  }
+}
+
 .card__title {
+  max-width: 80px;
+  margin: 0;
+  margin-bottom: 14px;
+  padding: 0;
   font-family: $secondary-font;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   text-align: left;
   color: #222222;
+
+  @media (min-width: $tablet-width) {
+    max-width: 135px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-full-width) {
+    margin-bottom: 23.4px;
+    padding-right: 3px;
+  }
 }
 
-.card__link {
-  text-decoration: none;
-  text-transform: uppercase;
+.card__list {
+  margin: 0;
+  padding: 0;
 }

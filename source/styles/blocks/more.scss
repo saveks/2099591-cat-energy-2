@@ -1,17 +1,67 @@
 .more {
-  background-image: url("../../icons/stack.svg#plus");
-  background-repeat: no-repeat;
-  background-size: 30px 30px;
+  display: flex;
+  flex-flow: column wrap;
+
+  @media (min-width: $tablet-width) {
+    align-self: end;
+    min-height: 429px;
+    padding: 160px 37px 40px;
+    background: $white;
+    box-shadow: inset 0 0 0 2px $grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 150px 37.5px 40px;
+  }
 }
 
 .more__title {
+  position: relative;
   margin: 0;
   margin-bottom: 8px;
   padding-top: 78px;
   font-family: $secondary-font;
   font-size: 16px;
+  font-weight: 400;
   line-height: 20px;
   text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+    padding: 0;
+    max-width: 134px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 26px;
+  }
+}
+
+.more__title::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/stack.svg#plus");
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  width: 30px;
+  height: 30px;
+  top: 25px;
+  left: calc(50% - 15px);
+
+  @media (min-width: $tablet-width) {
+    background-size: 60px 60px;
+    width: 60px;
+    height: 60px;
+    top: -110px;
+    left: calc(50% - 30px);
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -100px;
+  }
 }
 
 .more__text {
@@ -21,22 +71,27 @@
   line-height: 16px;
   color: $base-color-text;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 82px;
+    max-width: 170px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 90px;
+  }
 }
 
 .more__link {
-  padding: 10px 95px;
-  margin-bottom: 24px;
-  font-family: $secondary-font;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  color: $base-color-text;
-  background-color: #f2f2f2;
+  padding: 10px 0;
+  margin: 0 20px 24px;
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
-    padding: 10px 80px;
+    margin: 0;
+    padding: 10px 76px;
   }
 
   @media (min-width: $desktop-width) {

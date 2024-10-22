@@ -1,0 +1,34 @@
+.image-cat {
+  width: 280px;
+  height: 296px;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 613px;
+  }
+}
+
+.image-cat__fat {
+  grid-column: 1 / 4;
+  grid-row: 1 / 1;
+  width: 140px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 280px;
+  }
+}
+
+.image-cat__slim {
+  position: relative;
+  grid-column: 1 / 4;
+  grid-row: 1 / 1;
+  width: 140px;
+  margin-left: 140px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 280px;
+    margin-left: 280px;
+  }
+}

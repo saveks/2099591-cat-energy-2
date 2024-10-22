@@ -1,36 +1,39 @@
 .main-footer {
   min-height: 240px;
+  padding: 40px 20px;
   background-color: $grey;
 
   @media (min-width: $tablet-width) {
     min-height: 147px;
+    padding: 55px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 66px 110px;
   }
 }
 
 .main-footer__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 40px 20px;
+  margin: 0 auto;
   gap: 40px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    max-width: 900px;
+    align-items: center;
   }
-}
 
-.main-footer__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  gap: 24px;
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+  }
 }
 
 .main-footer__logo {
   display: block;
+  position: relative;
   width: 128px;
   height: 24px;
   margin: 0 auto;
@@ -40,7 +43,14 @@
   background-color: #111111;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    height: 37px;
+    margin: 8px 34px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    mask-position: center;
+    height: 37px;
+    margin-top: 1px;
   }
 
   &:hover,
@@ -50,5 +60,60 @@
 
   &:active {
     background-color: #6b6b6b;
+  }
+}
+
+.main-footer--inner .main-footer__logo {
+  margin-top: 2px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
+}
+
+.main-footer__list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 24px;
+}
+
+.main-footer__list::before {
+  @media (max-width: $mobile-width-only) {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: -21px;
+    left: 0;
+    background-color: $special-dark-grey;
+  }
+}
+
+.main-footer__list::after {
+  @media (max-width: $mobile-width-only) {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -20px;
+    left: 0;
+    background-color: $special-dark-grey;
+  }
+}
+
+.main-footer__copyright {
+  margin-top: 8px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
   }
 }

@@ -1,6 +1,6 @@
 .main-inner__title {
-  margin: 0 0 41px 20px;
-  padding: 0;
+  margin: 0;
+  padding: 0 0 41px 20px;
   font-family: $secondary-font;
   font-size: 36px;
   font-weight: 400;
@@ -9,7 +9,9 @@
   color: $black;
 
   @media (min-width: $tablet-width) {
-    margin: 0 84px 30px;
+    margin: 0 30px 84px;
+    font-size: 60px;
+    line-height: 60px;
   }
 
   @media (min-width: $desktop-width) {

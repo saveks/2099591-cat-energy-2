@@ -1,3 +1,37 @@
 .address {
   font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.address__street {
+  margin: 0;
+  padding-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 160px;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 19px;
+  }
+}
+
+.address__city {
+  margin: 0;
+  padding-left: 15px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
 }

@@ -1,3 +1,28 @@
+.products {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 74px;
+    padding: 0 30px;
+
+    @media (min-width: $desktop-full-width) {
+      margin-bottom: 71px;
+      padding: 0 110px;
+    }
+  }
+}
+
+.products__wrapper {
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 900px;
+  }
+
+  @media (min-width: $desktop-full-width) {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+}
+
 .products__list {
   display: flex;
   flex-flow: column wrap;
@@ -11,34 +36,66 @@
     gap: 60px;
   }
 
-  @media (min-width: $desktop-width) {
-    gap: 80px;
+  @media (min-width: $desktop-full-width) {
+    gap: 63px 80px;
   }
 }
 
 .products__item {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  padding: 20px 20px 25px;
+  display: grid;
+  grid-template-columns: 20px 1fr 1fr 20px;
+  grid-template-rows: 20px auto auto;
+  width: 100%;
+  min-height: 209px;
+  border-bottom: 1px solid #ebebeb;
+
 
   @media (min-width: $tablet-width) {
-    padding: 0 37px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 324px;
     min-height: 511px;
+    padding: 15px 37px 40px;
+    align-items: center;
+    background: linear-gradient(180deg, $white 16%, $grey 16%);
+    border: none;
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 0 38px 40px;
+  @media (min-width: $desktop-full-width) {
+    max-width: 245px;
+    padding: 17px 38px 40px;
+  }
+}
+
+.products__item:first-child {
+  border-top: 1px solid #ebebeb;
+
+  @media (min-width: $tablet-width) {
+    border: none;
   }
 }
 
 .products__link {
+  grid-column: 2/4;
+  grid-row: 3/4;
+  margin-bottom: 25px;
   padding: 10px 109px;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
   text-transform: uppercase;
   color: $white;
   background-color: $base-green;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 10px 94px;
+  }
+
+  @media (min-width: $desktop-full-width) {
+    padding: 10px 54px;
+  }
 }

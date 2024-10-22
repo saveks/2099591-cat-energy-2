@@ -1,7 +1,7 @@
 .social__link {
   display: block;
   width: 28px;
-  height: 28px;
+  height: 22px;
 }
 
 .social__link--vkontakte {
@@ -23,7 +23,8 @@
 .social__link--youtube {
   mask-image: url("../../icons/stack.svg#youtube");
   mask-repeat: no-repeat;
-  mask-size: 28px 22px;
+  mask-size: 24px 18.7px;
+  mask-position: center;
   background-color: #666666;
 
   &:hover,
@@ -39,7 +40,8 @@
 .social__link--telegram {
   mask-image: url("../../icons/stack.svg#telegram");
   mask-repeat: no-repeat;
-  mask-size: 28px 22px;
+  mask-size: 20px 18px;
+  mask-position: center;
   background-color: #666666;
 
   &:hover,
