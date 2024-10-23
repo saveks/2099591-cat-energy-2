@@ -84,6 +84,10 @@
   padding: 0;
   list-style: none;
   gap: 24px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 300px;
+  }
 }
 
 .main-footer__list::before {

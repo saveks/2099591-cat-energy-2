@@ -19,6 +19,7 @@
   position: relative;
   margin: 0;
   margin-bottom: 8px;
+  padding: 0 20px;
   padding-top: 78px;
   font-family: $secondary-font;
   font-size: 16px;
@@ -67,6 +68,7 @@
 .more__text {
   margin: 0;
   margin-bottom: 21px;
+  padding: 0 20px;
   font-size: 12px;
   line-height: 16px;
   color: $base-color-text;
@@ -74,6 +76,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 82px;
+    padding: 0;
     max-width: 170px;
     font-size: 16px;
     line-height: 18px;
@@ -85,16 +88,16 @@
 }
 
 .more__link {
-  padding: 10px 0;
   margin: 0 20px 24px;
+  padding: 10px;
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
+    width: 100%;
     margin: 0;
-    padding: 10px 76px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 10px 39px;
+    //padding: 10px 39px;
   }
 }

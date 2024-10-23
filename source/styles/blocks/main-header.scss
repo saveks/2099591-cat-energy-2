@@ -21,6 +21,14 @@
     z-index: 5;
   }
 
+  @media (min-width: 1700px) {
+    left: 15%;
+  }
+
+  @media (min-width: 2000px) {
+    left: 25%;
+  }
+
   @media (min-width: $desktop-full-width) {
     max-width: 1220px;
   }
@@ -71,7 +79,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 55px 110px 74px;
+    height: 100%;
+    margin: 0 110px 74px;
+    //margin-bottom: 74px;
+    padding-top: 55px;
   }
 }
 

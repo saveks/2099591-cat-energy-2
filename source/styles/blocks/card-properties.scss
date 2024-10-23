@@ -21,7 +21,7 @@
     &::after {
       position: absolute;
       content: "";
-      top: 25px;
+      top: 24px;
       left: 0;
       width: 100%;
       height: 1px;
@@ -54,12 +54,20 @@
 }
 
 .card-properties__weight-score {
+  @media (min-width: $tablet-width) {
+    margin-right: 2px;
+  }
+
   @media (min-width: $desktop-full-width) {
     margin-right: 2px;
   }
 }
 
 .card-properties__price-score {
+  @media (min-width: $tablet-width) {
+    margin-top: 2px;
+  }
+
   @media (min-width: $desktop-full-width) {
     margin-right: 4px;
   }
