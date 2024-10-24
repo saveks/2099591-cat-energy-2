@@ -40,7 +40,7 @@
   mask-image: url("../../images/logo-text.svg");
   mask-repeat: no-repeat;
   mask-size: 128px 24px;
-  background-color: #111111;
+  background-color: $special-black;
 
   @media (min-width: $tablet-width) {
     height: 37px;

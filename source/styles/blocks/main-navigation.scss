@@ -1,21 +1,17 @@
 .main-navigation {
   @media (min-width: $tablet-width) {
-    //width: 436px;
     margin-left: auto;
     padding-left: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    //padding-right: 4px;
   }
 }
 
 .main-navigation__toggle {
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
+  margin-left: 6px;
   background-image: url("../../icons/stack.svg#close-menu");
   background-repeat: no-repeat;
-  background-size: 24px 24px;
+  background-size: 18px 18px;
   background-position: center;
   background-color: $white;
   border: none;
@@ -36,7 +32,11 @@
 }
 
 .main-navigation--closed .main-navigation__toggle {
+  width: 24px;
+  height: 24px;
+  margin-left: 0;
   background-image: url("../../icons/stack.svg#open-menu");
+  background-size: 24px 24px;
 }
 
 .main-navigation--closed .main-navigation__list {
@@ -46,7 +46,7 @@
 }
 
 .main-navigation--nojs .main-navigation__toggle {
-  //display: none;
+  display: none;
 }
 
 .main-navigation__list {
