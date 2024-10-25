@@ -10,6 +10,8 @@
   <link rel="apple-touch-icon" href="favicons/180.png"><!-- apple-icon -->
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preload" href="/fonts/Lato-Regular.woff2" as="font">
+  <link rel="preload" href="/fonts/oswaldregular.woff2" as="font">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -30,6 +32,7 @@
         <img src="images/logo-text.svg" width="101" height="18" alt="Текстовый логотип Cat Energy.">
       </picture>
     </a>
+
     <nav class="main-navigation main-navigation--closed main-navigation--nojs">
       <button class="main-navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -56,6 +59,10 @@
         <h2 class="hero__title">Функциональное питание для котов</h2>
         <p class="hero__description">Занялся собой? Займись котом!</p>
         <picture class="hero__picture">
+          <source width="552" height="499" type="image/webp" media="(min-width: 1024px)" srcset="img/images/promo-desktop@1x.webp 1x, images/promo-desktop@2x.webp 2x">
+          <source width="709" height="609" type="image/webp" media="(min-width: 768px)" srcset="images/promo-tablet@1x.webp 1x, images/promo-tablet@2x.webp 2x">
+          <source width="280" height="270" type="image/webp" srcset="/images/promo-mobile@1x.webp 1x, images/promo-mobile@2x.webp 2x">
+
           <source width="552" height="499" type="image/png" media="(min-width: 1024px)" srcset="images/promo-desktop@1x.png 1x, images/promo-desktop@2x.png 2x">
           <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/promo-tablet@1x.png 1x, images/promo-tablet@2x.png 2x">
           <img class="hero__image" src="images/promo-mobile@1x.png" srcset="/images/promo-mobile@2x.png 2x" width="280" height="270" alt="Упаковка корма Кэт энерджи.">
@@ -130,6 +137,9 @@
         <div class="example__slider image-cat">
           <div class="image-cat__fat">
             <picture>
+              <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="/images/cat-before-tablet@1x.webp 1x, /images/cat-before-tablet@2x.webp 2x">
+              <source width="280" height="256" type="image/webp" srcset="/images/cat-before-mobile@1x.webp 1x, /images/cat-before-mobile@2x.webp 2x">
+
               <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="/images/cat-before-tablet@1x.png 1x, /images/cat-before-tablet@2x.png 2x">
               <img class="example__image example__image--fat" src="images/cat-before-mobile@1x.png" srcset="/images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Изображение толстого кота.">
             </picture>
@@ -141,6 +151,9 @@
 
           <div class="image-cat__slim">
             <picture>
+              <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="/images/cat-after-tablet@1x.webp 1x, /images/cat-after-tablet@2x.webp 2x">
+              <source width="280" height="256" type="image/webp" srcset="images/cat-after-mobile@1x.webp 1x, /images/cat-after-mobile@2x.webp 2x">
+
               <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="/images/cat-after-tablet@1x.png 1x, /images/cat-after-tablet@2x.png 2x">
               <img class="example__image example__image--slim" src="images/cat-after-mobile@1x.png" srcset="/images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Изображение худого кота.">
             </picture>

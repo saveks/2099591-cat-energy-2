@@ -1,6 +1,7 @@
 .main-header {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   place-items: center center;
   padding: 13px 21px 14px 20px;
