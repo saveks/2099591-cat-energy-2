@@ -8,6 +8,12 @@
   grid-row: 2/3;
   padding: 10.5px 35px;
 
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.8;
+  }
+
   @media (min-width: $tablet-width) {
     min-height: 210px;
     margin-bottom: 17px;
@@ -50,6 +56,15 @@
   margin-bottom: 25px;
   text-decoration: none;
   text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     max-width: 135px;
