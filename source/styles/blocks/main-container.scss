@@ -22,14 +22,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 41px 20px;
-  }
-}
-
-.main-container .main-container__title {
-  @media (min-width: $desktop-width) {
-    margin-bottom: 84px;
-    padding: 0;
-    padding-left: 110px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 110px 84px;
   }
 }

@@ -127,20 +127,21 @@
     width: 496px;
   }
 
-  &:not(:disabled):hover {
+  &:hover {
     border: 1px solid $special-grey-2;
   }
 
   &:focus,
   &:active {
     border: 1px solid $base-color-text;
+    outline: none;
   }
 
   &:disabled {
     opacity: 0.3;
+    pointer-events: none;
   }
 }
-
 
 .subscribe__button {
   padding: 15px 81.5px;

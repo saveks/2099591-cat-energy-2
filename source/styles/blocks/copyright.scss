@@ -6,13 +6,18 @@
   color: $base-color-text;
   text-decoration: none;
 
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     max-width: 170px;
+    padding-bottom: 4px;
   }
-}
-
-.copyright:active {
-  opacity: 0.3;
 }
 
 .copyright::after {
@@ -32,6 +37,7 @@
 .copyright:hover::after,
 .copyright:focus::after {
   background-color: $base-green;
+  outline: none;
 }
 
 .copyright:active::after {

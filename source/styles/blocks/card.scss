@@ -1,17 +1,14 @@
-.card__picture {
-  display: block;
-}
-
 .card__link-picture {
   display: block;
   grid-column: 2/3;
   grid-row: 2/3;
-  padding: 10.5px 35px;
+  padding: 10.5px 34px;
 
   &:hover,
   &:focus,
   &:active {
     opacity: 0.8;
+    outline: none;
   }
 
   @media (min-width: $tablet-width) {
@@ -31,8 +28,8 @@
   padding: 3.5px 28px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 13px;
-    padding: 2px 16px;
+    margin-bottom: 16px;
+    padding: 0 16px 2px;
   }
 
   @media (min-width: $desktop-full-width) {
@@ -40,7 +37,34 @@
   }
 }
 
-.card__wripper {
+.card__image {
+  margin-left: 2px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-top: 3px;
+  }
+
+  @media (min-width: $desktop-full-width) {
+    margin-top: 0;
+  }
+}
+
+.card__link-picture--big .card__image {
+  margin-left: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+}
+
+.card__link-picture--small .card__image {
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+}
+
+.card__wrapper {
   width: 140px;
   grid-column: 3/4;
   grid-row: 2/3;
@@ -60,6 +84,7 @@
   &:hover,
   &:focus {
     opacity: 0.6;
+    outline: none;
   }
 
   &:active {
@@ -74,7 +99,7 @@
 .card__title {
   max-width: 80px;
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
   padding: 0;
   font-family: $secondary-font;
   font-weight: 400;
@@ -102,4 +127,22 @@
 .card__list {
   margin: 0;
   padding: 0;
+}
+
+.card__link-picture--small {
+  padding: 13px 34px;
+
+  @media (min-width: $desktop-full-width) {
+    padding: 0;
+    padding-top: 10px;
+  }
+}
+
+.card__link-picture--wide {
+  padding: 10.5px 32px;
+
+  @media (min-width: $desktop-full-width) {
+    padding: 0;
+    padding-top: 10px;
+  }
 }

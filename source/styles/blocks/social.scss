@@ -2,6 +2,16 @@
   display: block;
   width: 28px;
   height: 22px;
+
+  &:hover,
+  &:focus {
+    background-color: $base-green;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social__link--vkontakte {
@@ -9,15 +19,6 @@
   mask-repeat: no-repeat;
   mask-size: 28px 22px;
   background-color: $grey-black;
-
-  &:hover,
-  &:focus {
-    background-color: $base-green;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 .social__link--youtube {
@@ -26,15 +27,6 @@
   mask-size: 24px 18.7px;
   mask-position: center;
   background-color: $grey-black;
-
-  &:hover,
-  &:focus {
-    background-color: $base-green;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 .social__link--telegram {
@@ -43,13 +35,4 @@
   mask-size: 20px 18px;
   mask-position: center;
   background-color: $grey-black;
-
-  &:hover,
-  &:focus {
-    background-color: $base-green;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }

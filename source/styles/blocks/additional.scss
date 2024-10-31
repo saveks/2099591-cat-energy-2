@@ -44,7 +44,7 @@
 
 .additional__title {
   width: 286px;
-  margin: 25px 0 34px;
+  margin: 24px 0 34px;
   padding-left: 20px;
   font-size: 24px;
   font-weight: 400;
@@ -117,7 +117,7 @@
   }
 }
 
-.additional__item::after {
+.additional__item::before {
   @media (min-width: $desktop-full-width) {
     content: "";
     position: absolute;
@@ -129,6 +129,12 @@
   }
 }
 
+.additional__item:first-child {
+  @media (min-width: $desktop-full-width) {
+    padding-bottom: 13px;
+  }
+}
+
 .additional__item:last-child {
   border-bottom: 1px solid $special-grey-2;
 
@@ -137,7 +143,7 @@
   }
 
   @media (min-width: $desktop-full-width) {
-    border: none;
+    padding-top: 17px;
   }
 }
 
