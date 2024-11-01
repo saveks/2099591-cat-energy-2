@@ -80,7 +80,7 @@
   grid-column: 2/4;
   grid-row: 3/4;
   margin-bottom: 25px;
-  padding: 10px 109px;
+  padding: 10px;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
@@ -91,11 +91,7 @@
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
+    width: 100%;
     margin: 0;
-    padding: 10px 94px;
-  }
-
-  @media (min-width: $desktop-full-width) {
-    padding: 10px 54px;
   }
 }

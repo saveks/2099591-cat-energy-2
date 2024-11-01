@@ -264,8 +264,10 @@
     }
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-position: center right;
+    outline: none;
   }
 
   &:active {

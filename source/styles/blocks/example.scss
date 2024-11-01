@@ -117,7 +117,7 @@
   text-align: center;
   line-height: 24px;
   color: $black;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $special-grey-2;
   border-radius: 3px;
 
   @media (min-width: $tablet-width) {
@@ -210,15 +210,16 @@
   width: 4px;
   height: 256px;
   padding: 0;
-  background-color: #666666;
+  background-color: $grey-black;
   border: none;
   border-radius: 2px;
   z-index: 1;
   cursor: pointer;
 
-  &:not(:disabled):hover,
+  &:hover,
   &:focus {
     background-color: $base-green;
+    outline: none;
   }
 
   &:active {
@@ -228,6 +229,7 @@
 
   &:disabled {
     opacity: 30%;
+    pointer-events: none;
   }
 
   @media (min-width: $tablet-width) {
@@ -238,7 +240,7 @@
 .example__toggle::before {
   content: "";
   background-color: $white;
-  border: 2px solid #666666;
+  border: 2px solid $grey-black;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -264,7 +266,7 @@
 
 .example__toggle::after {
   content: "";
-  background-color: #666666;
+  background-color: $grey-black;
   width: 24px;
   height: 18px;
   position: absolute;

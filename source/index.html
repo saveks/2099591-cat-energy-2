@@ -5,23 +5,28 @@
   <meta charset="UTF-8">
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="preload" href="/fonts/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/180.png"><!-- apple-icon -->
   <link rel="manifest" href="manifest.webmanifest">
+
   <link rel="stylesheet" href="styles/styles.css">
+
   <script src="scripts/index.js" defer></script>
-  <script src="scripts/maps.js" defer></script>
 </head>
 
 <body class="page__body">
 
-  <header class="main-header">
-    <a class="main-header__logo logo-link" href="#">
+  <header class="main-header" data-test="header">
+    <a class="main-header__logo" href="#">
       <picture>
         <source media="(min-width: 1024px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
         <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
-        <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+        <img class="main-header__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
       </picture>
     </a>
     <a class="main-header__logo main-header__logo--text" href="#">
@@ -31,6 +36,7 @@
         <img src="images/logo-text.svg" width="101" height="18" alt="Текстовый логотип Cat Energy.">
       </picture>
     </a>
+
     <nav class="main-navigation main-navigation--closed main-navigation--nojs">
       <button class="main-navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -52,11 +58,15 @@
   <main class="main-container">
     <h1 class="visually-hidden">Кэт энерджи - лучшее питание для котов.</h1>
 
-    <section class="hero">
+    <section class="hero" data-test="hero">
       <div class="hero__wrapper">
         <h2 class="hero__title">Функциональное питание для котов</h2>
         <p class="hero__description">Занялся собой? Займись котом!</p>
         <picture class="hero__picture">
+          <source width="552" height="499" type="image/webp" media="(min-width: 1024px)" srcset="images/promo-desktop@1x.webp 1x, images/promo-desktop@2x.webp 2x">
+          <source width="709" height="609" type="image/webp" media="(min-width: 768px)" srcset="images/promo-tablet@1x.webp 1x, images/promo-tablet@2x.webp 2x">
+          <source width="280" height="270" type="image/webp" srcset="/images/promo-mobile@1x.webp 1x, images/promo-mobile@2x.webp 2x">
+
           <source width="552" height="499" type="image/png" media="(min-width: 1024px)" srcset="images/promo-desktop@1x.png 1x, images/promo-desktop@2x.png 2x">
           <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/promo-tablet@1x.png 1x, images/promo-tablet@2x.png 2x">
           <img class="hero__image" src="images/promo-mobile@1x.png" srcset="/images/promo-mobile@2x.png 2x" width="280" height="270" alt="Упаковка корма Кэт энерджи.">
@@ -65,7 +75,7 @@
       </div>
     </section>
 
-    <section class="programms">
+    <section class="programms" data-test="programs">
       <div class="programms__wrapper">
         <h2 class="visually-hidden">Программы питания.</h2>
         <ul class="programms__list">
@@ -87,7 +97,7 @@
       </div>
     </section>
 
-    <section class="features">
+    <section class="features" data-test="features">
       <div class="features__wrapper">
         <h2 class="features__title">Как это работает</h2>
         <ul class="features__list">
@@ -107,7 +117,7 @@
       </div>
     </section>
 
-    <section class="example">
+    <section class="example" data-test="proof">
       <div class="example__wrapper">
         <h2 class="example__title">Живой пример</h2>
         <div class="example__content">
@@ -131,8 +141,11 @@
         <div class="example__slider image-cat">
           <div class="image-cat__fat">
             <picture>
-              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="/images/cat-before-tablet@1x.png 1x, /images/cat-before-tablet@2x.png 2x">
-              <img class="example__image example__image--fat" src="images/cat-before-mobile@1x.png" srcset="/images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Изображение толстого кота.">
+              <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.webp 1x, images/cat-before-tablet@2x.webp 2x">
+              <source width="280" height="256" type="image/webp" srcset="images/cat-before-mobile@1x.webp 1x, images/cat-before-mobile@2x.webp 2x">
+
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x">
+              <img class="example__image example__image--fat" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Изображение толстого кота.">
             </picture>
           </div>
 
@@ -142,8 +155,11 @@
 
           <div class="image-cat__slim">
             <picture>
-              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="/images/cat-after-tablet@1x.png 1x, /images/cat-after-tablet@2x.png 2x">
-              <img class="example__image example__image--slim" src="images/cat-after-mobile@1x.png" srcset="/images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Изображение худого кота.">
+              <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.webp 1x, images/cat-after-tablet@2x.webp 2x">
+              <source width="280" height="256" type="image/webp" srcset="images/cat-after-mobile@1x.webp 1x, images/cat-after-mobile@2x.webp 2x">
+
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x">
+              <img class="example__image example__image--slim" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Изображение худого кота.">
             </picture>
           </div>
 
@@ -152,7 +168,7 @@
       </div>
     </section>
 
-    <section class="map">
+    <section class="map" data-test="contacts">
       <h2 class="visually-hidden">Карта.</h2>
       <div class="map__wrapper">
         <p class="map__text">приглашаем<br> к сотрудничеству дилеров!</p>
@@ -162,13 +178,13 @@
         </address>
       </div>
       <div class="map__iframe">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7766.520154821929!2d30.320984957730186!3d59.94003889386022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1729617785622!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7766.520154821929!2d30.320984957730186!3d59.94003889386022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1729617785622!5m2!1sru!2sru" title="Карта" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
 
   </main>
 
-  <footer class="main-footer">
+  <footer class="main-footer" data-test="footer">
     <div class="main-footer__wrapper">
       <a class="main-footer__logo" href="#">
         <span class="visually-hidden">Текстовый логотип Кэт энерджи.</span>

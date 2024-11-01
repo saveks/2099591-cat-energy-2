@@ -6,21 +6,21 @@
   color: $white;
   background-image:
     linear-gradient(rgba(104, 183, 56, 0.85) 63%, $white 63%),
-    url("../../images/cat-licking@1x.jpg");
+    url("../../images/cat-licking-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: center, -160px -40px;
-  background-size: cover, 180%;
+  background-position: top;
+  background-size: contain;
   overflow: hidden;
 
   @media (min-resolution: 2dppx) {
     background-image:
       linear-gradient(rgba(104, 183, 56, 0.85) 63%, $white 63%),
-      url("../../images/cat-licking@2x.jpg");
+      url("../../images/cat-licking-mobile@2x.png");
   }
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    padding: 65px 30px 0;
+    padding: 40px 30px 0;
     color: $black;
     background: $white;
   }
@@ -32,29 +32,29 @@
     padding: 143px 0 0 110px;
     color: $black;
     z-index: 4;
-    //background-image: linear-gradient(90deg, $white 0%, $white 50%, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 100%);
-    // background-repeat: no-repeat;
-    // background-position: right top;
-    // background-size: 100%, contain;
+  }
+}
 
-    // @media (min-resolution: 2dppx) {
-    //   background-image: linear-gradient(90deg, $white 50%, rgba(104, 183, 56, 0.85) 50%);
-    // }
+.hero::after {
+  @media (min-width: $desktop-full-width) {
+    content: "";
+    background:
+      linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(104, 183, 56, 0.85) 0%),
+      url("../../images/cat-licking-desktop@1x.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 720px;
+    width: 100%;
+    height: 694px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: -1;
 
-    &::after {
-      content: "";
-      background:
+    @media (min-resolution: 2dppx) {
+      background-image:
         linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(104, 183, 56, 0.85) 0%),
-        url("../../images/cat-licking@1x.jpg");
-      background-size: contain;
-      background-repeat: no-repeat;
-      min-width: 720px;
-      width: 100%;
-      height: 694px;
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      z-index: -1;
+        url("../../images/cat-licking-desktop@2x.jpg");
     }
   }
 }
@@ -81,7 +81,7 @@
 .hero__title {
   margin: 0;
   margin-bottom: 25px;
-  padding: 0;
+  padding: 0 10px;
   padding-top: 27px;
   font-size: 36px;
   font-weight: 400;
@@ -110,7 +110,7 @@
 .hero__description {
   margin: 0;
   margin-bottom: 29px;
-  padding: 0;
+  padding: 0 10px;
   line-height: 14px;
   text-align: center;
   text-transform: uppercase;
