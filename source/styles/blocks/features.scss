@@ -65,7 +65,8 @@
     max-width: 1220px;
     margin: 0;
     padding: 0;
-    gap: 0;
+    //gap: 0; было
+    gap: 73px;
   }
 }
 
@@ -97,6 +98,24 @@
   }
 }
 
+// .features__item:nth-child(1) {
+//   @media (min-width: $desktop-full-width) {
+//     margin-right: 24px;
+//   }
+// }
+
+// .features__item:nth-child(2) {
+//   @media (min-width: $desktop-full-width) {
+//     margin-right: 9px;
+//   }
+// }
+
+// .features__item:nth-child(3) {
+//   @media (min-width: $desktop-full-width) {
+//     margin-right: 5px;
+//   }
+// }
+
 .features__item--nutrients {
   @media (min-width: $tablet-width) {
     width: 230px;
@@ -104,7 +123,9 @@
   }
 
   @media (min-width: $desktop-full-width) {
-    margin-right: 94px;
+    //margin-right: 94px; было
+    width: 250px;
+    padding-right: 24px;
   }
 }
 
@@ -137,7 +158,9 @@
   }
 
   @media (min-width: $desktop-full-width) {
-    margin-right: 79px;
+    //margin-right: 79px; было
+    width: 250px;
+    padding-right: 9px;
   }
 }
 
@@ -169,8 +192,10 @@
   }
 
   @media (min-width: $desktop-full-width) {
-    width: 248px;
-    margin-right: 75px;
+    //width: 248px;
+    //margin-right: 75px; было
+    width: 250px;
+    padding-right: 5px;
   }
 }
 
@@ -204,8 +229,9 @@
   }
 
   @media (min-width: $desktop-full-width) {
-    width: 248px;
-    padding-left: 0;
+    //width: 248px;
+    padding-left: 3px;
+    width: 250px;
   }
 }
 
@@ -264,15 +290,29 @@
   }
 }
 
+.features__item--nutrients .features__description::after {
+  @media (min-width: $desktop-full-width) {
+    right: 4px;
+  }
+}
+
 .features__item--powder .features__description::after {
   @media (min-width: $tablet-width) {
     right: 1px;
+  }
+
+  @media (min-width: $desktop-full-width) {
+    right: -4px;
   }
 }
 
 .features__item--exchange .features__description::after {
   @media (min-width: $tablet-width) {
     right: 1px;
+  }
+
+  @media (min-width: $desktop-full-width) {
+    right: -4px;
   }
 }
 
