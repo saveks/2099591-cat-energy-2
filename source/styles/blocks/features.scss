@@ -65,7 +65,7 @@
     max-width: 1220px;
     margin: 0;
     padding: 0;
-    gap: 0;
+    gap: 73px;
   }
 }
 
@@ -104,7 +104,8 @@
   }
 
   @media (min-width: $desktop-full-width) {
-    margin-right: 94px;
+    width: 250px;
+    padding-right: 24px;
   }
 }
 
@@ -137,7 +138,8 @@
   }
 
   @media (min-width: $desktop-full-width) {
-    margin-right: 79px;
+    width: 250px;
+    padding-right: 9px;
   }
 }
 
@@ -169,8 +171,8 @@
   }
 
   @media (min-width: $desktop-full-width) {
-    width: 248px;
-    margin-right: 75px;
+    width: 250px;
+    padding-right: 5px;
   }
 }
 
@@ -204,8 +206,8 @@
   }
 
   @media (min-width: $desktop-full-width) {
-    width: 248px;
-    padding-left: 0;
+    padding-left: 3px;
+    width: 250px;
   }
 }
 
@@ -264,15 +266,29 @@
   }
 }
 
+.features__item--nutrients .features__description::after {
+  @media (min-width: $desktop-full-width) {
+    right: 4px;
+  }
+}
+
 .features__item--powder .features__description::after {
   @media (min-width: $tablet-width) {
     right: 1px;
+  }
+
+  @media (min-width: $desktop-full-width) {
+    right: -4px;
   }
 }
 
 .features__item--exchange .features__description::after {
   @media (min-width: $tablet-width) {
     right: 1px;
+  }
+
+  @media (min-width: $desktop-full-width) {
+    right: -4px;
   }
 }
 
